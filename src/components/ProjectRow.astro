@@ -1,0 +1,21 @@
+<div
+  class={`w-full flex ${
+    Astro.props.reversed ? "flex-row-reverse" : "flex-row"
+  }`}
+>
+  <div class="w-1/2 aspect-square flex justify-center items-center">
+    <div class={`text-5xl text-${Astro.props.color}`}>{Astro.props.number}</div>
+  </div>
+  <a
+    class={`w-1/2 aspect-square `}
+    href={`projects/${Astro.props.projectLink}`}
+  >
+    <div
+      class={`w-full h-full bg-${Astro.props.color} flex justify-center items-center flex-col gap-4`}
+    >
+      <div class="text-3xl text-white">{Astro.props.title}</div>
+      <div class="text-xl text-white">{Astro.props.subtitle}</div>
+      <div class="text-xl text-white">-&gt;</div>
+    </div>
+  </a>
+</div>
