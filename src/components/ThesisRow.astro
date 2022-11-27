@@ -1,22 +1,57 @@
-<div
-  class="w-full flex"
->
-  <div class="w-1/2 aspect-square flex justify-center items-center">
-    <div class="text-5xl redtext" >1</div>
+---
+import { BackgroundImage } from "astro-imagetools/components";
+---
+
+<div class="w-full flex flex-row-reverse">
+  <div class="w-1/2 ratio" id="background">
+    <a class="w-full h-full" href="projects/thesis">
+      <div
+        class={`w-full h-full redbackground flex justify-center items-center flex-col gap-5`}
+      >
+        <div class="text-5xl text-white titlefont">
+          Experiencing <br />
+          Architecture
+        </div>
+        <div class="text-xl text-white descriptionfont">
+          An exploration of how sequencing spaces <br />
+          can affect one's experience.
+        </div>
+        <div class="text-xl text-white">-&gt;</div>
+      </div>
+    </a>
   </div>
-  <a
-    class={`w-1/2 aspect-square `}
-    href="projects/thesis"
-  >
-    <div
-      class={`w-full h-full redbackground flex justify-center items-center flex-col gap-4`}
-    >
-      <div class="text-3xl text-white">Architecture Thesis</div>
-      <div class="text-xl text-white">What I did in my THesis</div>
-      <div class="text-xl text-white">-&gt;</div>
-    </div>
-  </a>
+  <div class="w-1/2 ratio flex justify-center items-center" id="number">
+    <div class="text-9xl redtext numberfont" id="child">1</div>
+    <BackgroundImage src="/src/images/thesis.png" backgroundSize="fill"/>
+  </div>
 </div>
-<style>.redbackground{background-color: rgb(252 165 165);} 
-.redtext{color:rgb(252 165 165)}
+<style>
+  .redbackground {
+    background-color: rgb(248 167 162);
+  }
+  .redtext {
+    color: rgb(248 167 162);
+  }
+  #number {
+    opacity: 0.5;
+  }
+  #background:hover ~ #number {
+    opacity: 1;
+  }
+  .ratio {
+    aspect-ratio: 4/3;
+    width: 100%;
+  }
+  .numberfont {
+    font-weight: 800;
+    font-family: "Alexandria";
+  }
+  .titlefont {
+    font-weight: 400;
+    text-align: center;
+  }
+  .descriptionfont {
+    font-weight: 300;
+    text-align: center;
+  }
 </style>

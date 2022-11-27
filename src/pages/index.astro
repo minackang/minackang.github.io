@@ -1,11 +1,17 @@
 ---
+import EatingWellRow from "../components/EatingWellRow.astro";
+import PlantPlaceRow from "../components/PlantPlaceRow.astro";
 import ThesisRow from "../components/ThesisRow.astro";
 import MySiteLayout from "../layouts/default.astro";
 ---
 
-<MySiteLayout title="Home Page">
-  <h1 class="sm:text-3xl">Hello, World!</h1>
+<MySiteLayout>
+
   <ThesisRow
+  />
+  <PlantPlaceRow
+  />
+  <EatingWellRow
   />
  
 </MySiteLayout>

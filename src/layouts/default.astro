@@ -1,24 +1,47 @@
 ---
-// import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-const { title } = Astro.props
+import "../styles/global.css";
+import { ImageSupportDetection } from "astro-imagetools/components";
 ---
+
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <ImageSupportDetection/>
     <!-- <BaseHead title={title}/> -->
   </head>
   <body>
-    <nav class="hidden sm:block">
-      <a href="#">Home</a>
-      <a href="#">Posts</a>
-      <a href="#">Contact</a>
+    <nav
+      class="hidden sm:flex w-full topnav flex-row justify-between p-5 px-10 items-center navbackground"
+    >
+      <h1 class="text-2xl font-bold tracking-wider">{"Mina Kang"}</h1>
+      <div class="gap-10 flex-row flex">
+        <a href="#">home</a>
+        <a href="#">projects</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      </div>
     </nav>
-    <h1>{title}</h1>
     <article>
-      <slot /> <!-- your content is injected here -->
+      <slot />
+      <!-- your content is injected here -->
     </article>
     <!-- <Footer /> -->
   </body>
 </html>
+
+<style>
+  .navbackground {
+    background-color: rgba(234 230 226/0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
+  } 
+</style>
