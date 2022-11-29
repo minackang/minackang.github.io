@@ -1,16 +1,23 @@
 <div class="w-full flex flex-row-reverse">
-    <div class="w-1/2 ratio" id="background">
-        <a class="w-full h-full" href="projects/thesis">
+    <div class="w-1/2 ratio">
             <div
                 class={`w-full h-full beigebackground justify-center flex flex-col gap-5 pl-20`}
             >
-                <div class="text-black welcomefont tracking-wider">welcome to my page!</div>
-                <div class="text-black minafont tracking-wide">i'm Mina.</div>
-            
-                <div class="text-black journeyfont">join me on my creative journey :-)</div>
-                <div class="text-xl text-white">-&gt;</div>
+                <div class="text-black welcomefont tracking-wide">
+                    welcome to my page!
+                </div>
+
+                <div class="text-black minafont tracking-wider">
+                    i'm <span class="rectangle">Mina</span>.
+                </div>
+                <div class="text-black journeyfont tracking-wide">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    join me on my creative journey :-)
+                </div>
             </div>
-        </a>
     </div>
     <div class="w-1/2 ratio flex justify-center items-center beigebackground">
         <div class="text-9xl redtext numberfont" id="child">0</div>
@@ -26,34 +33,36 @@
     #number {
         opacity: 0.5;
     }
-    #background:hover ~ #number {
-        opacity: 1;
-    }
     .ratio {
-        aspect-ratio: 4/3;
+        aspect-ratio: 1;
         width: 100%;
     }
     .numberfont {
         font-weight: 800;
-        font-family: "Alexandria";
+        font-family: "Alexandria", sans-serif;
     }
     .welcomefont {
-        font-weight: 500;
+        font-weight: 300;
         text-align: left;
-        font-size: 35px;
+        font-size: 38px;
         font-family: "Acumin-Pro", "Alexandria", sans-serif;
     }
     .minafont {
-        font-weight: 500;
+        font-weight: 600;
         text-align: left;
         font-size: 70px;
-        font-family: "Alexandria";
+        font-family: "Alexandria", sans-serif;
+    }
+    .rectangle {
+        width: 190px;
+        height: 100px;
+        background-color: rgb(181 217 248);
     }
     .journeyfont {
         font-weight: 300;
         text-align: left;
         font-size: 28px;
-        font-family: "Acumin-Pro", "Alexandria";
+        font-family: "Acumin-Pro", "Alexandria", sans serif;
         vertical-align: -20px;
     }
 </style>

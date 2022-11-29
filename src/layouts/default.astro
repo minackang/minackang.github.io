@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import { ImageSupportDetection } from "astro-imagetools/components";
 ---
 
 <html lang="en">
@@ -13,8 +12,7 @@ import { ImageSupportDetection } from "astro-imagetools/components";
       href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://use.typekit.net/afz1ogo.css">
-    <ImageSupportDetection/>
+    <link rel="stylesheet" href="https://use.typekit.net/afz1ogo.css
     <link rel="stylesheet" href="global.css">
     <!-- <BaseHead title={title}/> -->
   </head>
@@ -22,7 +20,7 @@ import { ImageSupportDetection } from "astro-imagetools/components";
     <nav
       class="hidden sm:flex w-full topnav flex-row justify-between p-7 px-10 items-center navbackground headercolor"
     >
-      <h1 class="text-2xl font-semibold tracking-wider">{"Mina Kang"}</h1>
+      <h1 class="text-2xl font-semibold tracking-wider headerMina">{"Mina Kang"}</h1>
       <div class="gap-10 flex-row flex font-regular">
         <a href="#">home</a>
         <a href="#">projects</a>
@@ -40,13 +38,17 @@ import { ImageSupportDetection } from "astro-imagetools/components";
 
 <style>
   .navbackground {
-    background-color: rgba(234 230 226/0.8);
+    background-color: rgba(238 235 232/0.8);
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000
+    z-index: 1000;
   } 
   .headercolor {
     color: rgb(35 52 77)
+  }
+  .headerMina:hover {
+    color: rgb(105 123 149);
+    transition: 0.3s;
   }
 </style>

@@ -1,18 +1,14 @@
----
-import { BackgroundImage } from "astro-imagetools/components";
----
-
 <div class="w-full flex flex-row-reverse">
   <div class="w-1/2 ratio" id="background">
     <a class="w-full h-full" href="projects/thesis">
       <div
         class={`w-full h-full redbackground flex justify-center items-center flex-col gap-5`}
       >
-        <div class="text-5xl text-white titlefont">
+        <div class="text-5xl titlefont">
           Experiencing <br />
           Architecture
         </div>
-        <div class="text-xl text-white descriptionfont">
+        <div class="text-xl descriptionfont">
           An exploration of how sequencing spaces <br />
           can affect one's experience.
         </div>
@@ -20,38 +16,37 @@ import { BackgroundImage } from "astro-imagetools/components";
       </div>
     </a>
   </div>
-  <div class="w-1/2 ratio flex justify-center items-center image" id="number">
-    <div class="text-9xl redtext numberfont" id="child">1</div>
-    <BackgroundImage src="/src/images/thesis.png" />
+  <div class="w-1/2 ratio flex justify-center items-center thesisimage" id="number">
+    <div class="text-9xl redtext" id="child">1</div>
   </div>
 </div>
 <style>
   .redbackground {
-    background-color: rgb(248 167 162);
+    background-color: rgb(235 167 153);
   }
   .redtext {
-    color: rgb(248 167 162);
+    color: rgb(235 167 153);
+    font-weight: 800;
+    font-family: "Alexandria";
   }
   #number {
     opacity: 0.5;
   }
-  #background:hover ~ #number {
+  #background:hover + #number #child{
     opacity: 1;
   }
   .ratio {
     aspect-ratio: 4/3;
     width: 100%;
   }
-  .numberfont {
-    font-weight: 800;
-    font-family: "Alexandria";
-  }
   .titlefont {
     font-weight: 400;
     text-align: center;
+    color: rgb(248 248 247);
   }
   .descriptionfont {
     font-weight: 300;
     text-align: center;
+    color: rgb(248 248 247);
   }
 </style>
