@@ -14,3 +14,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+.whiteoverlay {
+	background-image: url(../images/whiteoverlay.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+/* url(../images/whiteoverlay.png), */
