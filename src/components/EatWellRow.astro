@@ -1,12 +1,13 @@
-<div class="w-full flex">
+<div class="w-full flex flex-row-reverse">
   <div class="w-1/2 ratio" id="background">
     <a class="w-full h-full" href="projects/thesis">
       <div
-        class={`w-full h-full greenbackground flex justify-center items-center flex-col gap-5`}
+        class={`w-full h-full purplebackground flex justify-center items-center flex-col gap-5`}
       >
-        <div class="text-5xl titlefont tracking-wide">PlantPlace</div>
+        <div class="text-5xl titlefont tracking-wide">EatWell</div>
         <div class="text-xl descriptionfont tracking-wide">
-          A marketplace for plant lovers.
+          Designed to help people build a <br />
+          healthier relationship with food.
         </div>
         <br />
         <svg
@@ -24,21 +25,22 @@
     </a>
   </div>
   <div
-    class="w-1/2 ratio flex justify-center items-center plantplaceimage"
+    class="w-1/2 ratio flex justify-center items-center thesisimage"
     id="numberbackground"
   >
     <div>
       <svg
         width="411"
-        height="532.5"
-        viewBox="0 0 329 426"
+        height="529"
+        viewBox="0 0 329 423"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M200.787 159.072C192.32 173.132 181.232 186.99 167.524 200.648L10.886 362.733V426H329V349.477H132.984L232.235 248.249C256.023 224.147 275.376 200.447 290.294 177.149C305.615 153.448 313.276 130.552 313.276 108.458C313.276 86.3649 307.026 67.2843 294.528 51.2164C282.432 34.7468 265.498 22.0933 243.726 13.256C222.357 4.41866 197.561 0 169.338 0C139.502 0 110.271 5.62376 81.6452 16.8713C53.4221 27.7171 26.2071 42.5799 0 61.4597L37.4963 130.15C56.4461 114.082 76.2022 101.429 96.7647 92.1895C117.73 82.5488 137.285 77.7284 155.428 77.7284C173.572 77.7284 187.683 81.5446 197.763 89.1768C208.246 96.8091 213.487 107.655 213.487 121.714C213.487 132.56 209.254 145.013 200.787 159.072Z"
+          d="M295.441 209.708C273.467 189.792 244.503 177.843 208.546 173.86L185.739 170.642L308.026 54.9661V0H20.9745L21.5738 74.0847H191.56L85.0965 177.445V230.021H152.814C179.182 230.021 199.557 235 213.94 244.958C228.722 254.915 236.113 269.653 236.113 289.169C236.113 301.517 232.917 312.47 226.525 322.03C220.132 331.191 210.744 338.36 198.359 343.538C185.974 348.318 170.992 350.708 153.413 350.708C132.639 350.708 112.264 346.924 92.2878 339.356C72.3121 331.788 53.7347 320.835 36.5555 306.496L0 374.008C19.9757 388.746 44.1463 400.695 72.5119 409.856C101.277 418.619 130.641 423 160.605 423C194.963 423 224.727 417.424 249.896 406.271C275.066 394.72 294.442 378.788 308.026 358.475C322.008 337.763 329 314.263 329 287.975C329 255.314 317.814 229.225 295.441 209.708Z"
           fill="white"
-          fill-opacity="0.8" id="number"></path>
+          fill-opacity="0.8"
+          id="number"></path>
       </svg>
     </div>
     <!-- <svg width="166" height="389" viewBox="0 0 166 389" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,11 +50,11 @@
   </div>
 </div>
 <style>
-  .greenbackground {
-    background-color: rgb(166 194 156);
+  .purplebackground {
+    background-color: rgb(186 169 223);
   }
   #background:hover + #numberbackground #number {
-    fill: rgb(166 194 156);
+    fill: rgb(186 169 223);
     transition: 0.2s;
     fill-opacity: 1;
   }
