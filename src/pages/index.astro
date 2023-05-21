@@ -1,22 +1,66 @@
 ---
-import BitsandBobsRow from "../components/BitsandBobsRow.astro";
-import EatingWellRow from "../components/EatingWellRow.astro";
-import EatWellRow from "../components/EatWellRow.astro";
-import IntroRow from "../components/IntroRow.astro";
-import PlantPlaceRow from "../components/PlantPlaceRow.astro";
-import ThesisRow from "../components/ThesisRow.astro";
 import MySiteLayout from "../layouts/default.astro";
 ---
 
 <MySiteLayout>
-  <IntroRow
-  />
-  <ThesisRow
-  />
-  <PlantPlaceRow
-  />
-  <EatWellRow
-  />
-  <BitsandBobsRow
-  />
+  <div class="w-screen h-screen flex justify-center items-center">
+    <h1 class="text-3xl font-medium text-center">
+  i'm an <span class="text-[#7692F6] hover:text-[#2E5CFF]">architectural designer</span> striving to support 
+  <br/> people through uplifting <span class="text-[#FAA593] hover:text-[#F1705F]">user experiences</span></h1>
+  </div>
+  
+  <div class="w-screen flex flex-col">
+    
+    <div class="pb-5 pl-10 uxtitle">
+      <img src= "/L-ux-ui-title.png"
+  alt= "ux/ui title"></div>
+    <!-- <h2 class="text-[6rem] font-semibold">ux/ui</h2> -->
+    <a href="/projects/nutrie">
+      <div class="w-full hover">
+        <img src="/L-Nutrie-Index-Row-Color.png"
+        alt="Nutrie logo and frames">  
+      </div>
+    </a>
+    <a href="/projects/plantplace">
+    <div class="w-full hover pb-20">
+        <img src="/L-PlantPlace-Index-Row-Color.png"
+        alt="PlantPlace logo and frames">
+    </div>
+  </a>
+    <div class="pb-5 pl-10 archtitle">
+      <img src= "/L-architecture-title.png"
+  alt= "architecture title"></div>
+    <!-- <h2 class="text-[6rem] font-semibold pt-32">architecture</h2> -->
+    <a href="/projects/arch">
+    <div class="w-full pb-24 hover">
+      <img src="/L-Arch-Index-Row-Color.png"
+      alt="Experiencing Architecture and architectural drawing"/> 
+    </div>
+    </a>
+
+  </div>
 </MySiteLayout>
+
+<style>
+  .hover {
+	filter: grayscale(100%);
+	transition: 0.3s;
+}
+.hover:hover {
+	filter: none
+}
+h2 {
+        font-weight:bold;
+        font-family: "Alexandria", sans-serif;
+}
+
+.uxtitle {
+        max-width: 15%;
+        max-height: auto;
+    }
+
+.archtitle {
+        max-width: 50%;
+        max-height: auto;
+    }
+</style>

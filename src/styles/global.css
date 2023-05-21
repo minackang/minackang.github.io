@@ -3,26 +3,27 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-body {
-	font-family: 'Alexandria', sans-serif;
-	background-color: rgb(248 248 247)
-}
 
-.thesisimage {
-	background-color: rgb(248 248 247);
-	background-image: url(../images/thesisimage.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
+h2 {
+	font-family: 'Archivo', sans-serif;
+	font-weight: 200;
 }
-.whiteoverlay {
-	background-image: url(../images/whiteoverlay.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
+body {
+	font-weight: 200;
+        font-family: "Archivo", sans-serif;
+    }
+
+h3, h1 {
+        font-weight:bold;
+        font-family: "Alexandria", sans-serif;
+    }
+
+h4, h6 {
+	font-family: "Alexandria", sans-serif;
+	font-weight:400;
 }
-.plantplaceimage {
-	background-color: rgb(248 248 247);
-	background-image: url(../images/plantplaceimage.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
+h5 {
+	font-family: "Archivo", sans-serif;
+	font-weight: 500;
 }
 /* url(../images/whiteoverlay.png), */

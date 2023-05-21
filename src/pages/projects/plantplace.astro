@@ -1,0 +1,111 @@
+---
+import MySiteLayout from "../../layouts/default.astro";
+---
+
+<MySiteLayout>
+    <div class="w-full">
+        <img src= "/L-PlantPlace-page-static-image.png"
+        alt= "PlantPlace phone frames">
+    </div>
+    <div class="pl-10">
+        <h1 class="text-[4rem] font-semibold">plantplace</h1>
+        <h2 class="text-[2.25rem] tracking-wide font-extralight header2">a mobile app to buy and sell plants</h2>
+    </div>
+    <article class="max-w-3xl mx-auto pt-8 tracking-wider flex flex-col">
+            <h3 class="text-[2.25rem] pt-20 pb-10">tl;dr</h3>
+            <p>The problem with most marketplace apps and sites is that there aren’t enough options for specificity.  
+                After browsing through eBay, Facebook Marketplace, and Etsy, the search functions were not catered towards plants, making it difficult to find any particular plant.
+            </p>
+            <br/>
+            <p>PlantPlace utilizes a filtering menu to allow everyday users to distinguish plants from one another.  
+                People can filter based on price, type, size, delivery method, location, whether a pot is included, care difficulty, and health condition.
+            </p>
+            <br/>
+            <p class="pb-20">Through an iterative process, I discovered a few elements that improved the user experience.  
+                I was able to establish a hierarchy of information, a consistent style, a simplified color palette, and better viewability.
+            </p>
+    </article>
+    <div class="welcome pb-20">
+        <img src= "/L-PlantPlace-welcome-screen.png"
+    alt= "PlantPlace welcome screen"></div>
+    <div class="bg-[#ECEEF4]">
+        <article class="max-w-3xl mx-auto tracking-wider">
+            <h3 class="text-[2.25rem] pt-16 pb-10">the iterations</h3>
+            <h4 class="text-[1.5rem] pb-5 tracking-normal">hierarchy of information</h4>
+            <p class="pb-20">
+                In an earlier iteration, the plant details, notes, and seller details were distinguishable by the use of separate bubbles (a).  
+                I found that this separation was not quite enough to help the user locate the information they need in the most efficient way.  
+                The iteration to the right gives a unique character to the plant details by placing individual bubbles in a cluster (b).  
+                The rest of the information is separated with tabs in order to not overcrowd the page with text.
+            </p>
+        </article>
+        <div class="frameab pb-20">
+            <img src= "/L-PlantPlace-frame-a-b.png"
+        alt= "screens showing comparison between two iterations"></div>
+    </div>
+    <article class="max-w-3xl mx-auto tracking-wider">
+        <h4 class="text-[1.5rem] pb-5 tracking-normal pt-16">style consistency</h4>
+        <p class="pb-20">
+            While most of the buttons have rounded corners, the links at the bottom of (c) are presented with sharp corners.  
+            This makes the overall appearance seem uncoordinated.  Staying consistent with styles gives a much cleaner, cohesive look (d).
+        </p>
+    </article>
+    <div class="frameab pb-20">
+        <img src= "/L-PlantPlace-frame-c-d.png"
+    alt= "screens showing comparison between two iterations"></div>
+</div>
+<div class="bg-[#ECEEF4]">
+    <article class="max-w-3xl mx-auto tracking-wider">
+        <h4 class="text-[1.5rem] pb-5 pt-16 tracking-normal">simplification of color palette</h4>
+        <p class="pb-20">
+            The first color scheme (e) feels more cluttered than the second (f) because of the multiple hues.  
+            I decided to stick with a single hue and balance it with neutrals such as black and white.
+        </p>
+    </article>
+    <div class="frameab pb-20">
+        <img src= "/L-PlantPlace-frame-e-f.png"
+    alt= "screens showing comparison between two iterations"></div>
+</div>
+<article class="max-w-3xl mx-auto tracking-wider">
+    <h4 class="text-[1.5rem] pb-5 pt-16 tracking-normal">consolidation for better viewability</h4>
+    <p class="pb-20">
+        Instead of having to cycle through two separate screens to select the filtering options (g), a tap to expand function allows the user to make multiple selections for different criteria with ease (h).
+    </p>
+</article>
+<div class="framegh pb-40">
+    <img src= "/L-PlantPlace-frame-g-h.png"
+alt= "screens showing comparison between two iterations"></div>
+<a href="/projects/arch"><div class="pl-10">
+    <h3 class="font-medium text-[2.25rem] pt-10 pb-20 h3font hover:text-[#2E5CFF] text-[#7692F6]">Architecture project: Designing a Preschool</h3>
+</div>
+</a>
+
+</MySiteLayout>
+
+<style>
+    
+    .welcome {
+        max-width: 20%;
+        max-height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .frameab {
+        max-width: 40%;
+        max-height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .framegh {
+        max-width: 58%;
+        max-height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    </style>

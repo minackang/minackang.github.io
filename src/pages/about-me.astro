@@ -1,1 +1,91 @@
-<h1>About Me</h1>
+---
+import MySiteLayout from "../layouts/default.astro";
+
+---
+
+<MySiteLayout>
+    <div class="flex flex-row">
+    <article class="pt-8 tracking-wider flex flex-col">
+        <div class="pl-64 pt-64">
+        <h1 class="text-[4rem] font-semibold">about me</h1>
+</div>
+
+        <article class="pl-64 pt-10 max-w-4xl tracking-wide flex flex-row">
+            <div><p>Welcome to my website. 
+             I’m an aspiring UX designer with a background in architectural design.
+            </p>
+            <br/>
+            <p>I graduated from Virginia Tech in 2020 with a Bachelor of Architecture and have since been working at a global engineering/architecture firm.  
+    After being introduced to Figma in late 2022, I quickly gained interest in web and mobile app design.  
+    I was already familiar with the iterative process of design, but the continuous testing and turnaround of user experience design was faster-paced and more appealing.  
+    I gravitated towards the nearly immediate and direct nature of incorporating user feedback.
+            </p>
+            <br/>
+            <p>On this site you’ll find one of my personal architectural design projects as well as ongoing personal UX projects.  
+    Join me as I continue to explore our world of user experiences.
+            </p>
+        </div>
+        </article>
+        
+        <div class="flex flex-row">
+        <div class="pl-44 pt-28 resume">
+            <img src="/L-resume.png" alt="see resume">
+        </div> 
+        <div class="pl-44 pt-28 contact">
+            <img src="/L-contact.png" alt="contact me">
+        </div> 
+    </div>
+    </article>
+    <div class="photo pt-36 pl-44">
+        <img src="/photos2.png" alt="photos of me">
+    </div> 
+</div>
+
+<!-- <div class="chicago pr-6">
+    <img src= "/chicago.png"
+alt= "me in chicago"></div>
+<div class="donut right-0">
+    <img src= "/donut.png"
+alt= "me with a donut"></div>
+<div class="cherryblossom right-0 pl-6 ">
+    <img src= "/cherryblossom.png"
+alt= "cherry blossom tree"></div>
+</div> -->
+
+
+</div>
+
+</MySiteLayout>
+
+<style>
+
+.photo {
+    max-width: 36%;
+    max-height: auto;
+}
+
+.table {
+    max-width: 20%;
+    max-height: auto;
+}
+
+.cherryblossom {
+    max-width: 16%;
+    max-height: auto;
+}
+
+.resume {
+    width: 400px;
+    height: auto;
+}
+
+.contact {
+    width: 383px;
+    height: auto;
+}
+
+.resume:hover {
+    content:url("L-resume-hover.png");
+  }
+
+</style>
