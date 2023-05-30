@@ -4,11 +4,16 @@ import MySiteLayout from "../layouts/default.astro";
 
 <MySiteLayout>
   <div class="w-screen container mx-auto">
-    <div class="bg-[#ECEEF4] h-[70vh] mt-52 w-3/4 flex flex-row align-center">
+    <div
+      class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[70vh] mt-52 w-3/4 flex flex-row align-center"
+    >
       <div class="flex flex-col justify-center">
         <h1 class="font-medium text-4xl pl-40">
-          ı'm<br />
-          <span class="leading-[100px] text-[130px] tracking-tight">mına</span>
+          ı'm
+          <span
+            class="leading-[100px] text-[130px] tracking-tight pl-2 font-medium"
+            >mına</span
+          >
         </h1>
         <h2 class="font-medium text-4xl pl-40 pt-32 tracking-tight">
           an <span class="text-[#C467F0]">archıtectural desıgner</span><br />
@@ -22,38 +27,40 @@ import MySiteLayout from "../layouts/default.astro";
       <img
         src="/im-mina-photo.png"
         alt="photo of me"
-        class="-mr-60 rotate-[355deg] im-mina-photo"
+        class="-mr-96 rotate-[352deg] im-mina-photo"
       />
     </div>
 
     <div class="pt-20">
       <h1 class="font-medium text-4xl pl-40">
         my
-        <br />
-        <span class="leading-[100px] text-[130px] tracking-tight">work</span>
+        <span class="leading-[100px] text-[130px] tracking-tight pl-2"
+          >work</span
+        >
       </h1>
     </div>
 
     <a href="/projects/nutrie">
       <div
-        class="bg-[#ECEEF4] mt-16 ml-16 h-[70vh] w-full flex flex-row justify-between relative container"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row justify-between relative container group"
       >
         <img
           src="L-Nutrie-Index-Logo-bw.png"
-          class="mb-[350px] m-80 ml-[335px]"
+          class="mb-[350px] m-80 ml-[370px]"
         />
 
         <img
           src="/L-Nutrie-Index-Spread-bw.png"
           alt="photo of nutrie phone screens in black and white"
+          class="nutrie-cover"
         />
         <div
-          class="bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-12"
+          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
         >
-          <h2 class="font-medium text-4xl tracking-tight align-center">
+          <h2 class="font-medium text-4xl tracking-normal align-center">
             nutrıe
           </h2>
-          <p class="tracking-wide">
+          <p class="tracking-wide font-medium text-lg">
             A mobile app for guided intuitive meal planning
           </p>
         </div>
@@ -62,24 +69,24 @@ import MySiteLayout from "../layouts/default.astro";
 
     <a href="/projects/plantplace">
       <div
-        class="bg-[#ECEEF4] mt-24 -ml-16 h-[70vh] w-full flex flex-row justify-between relative container"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-24 h-[70vh] w-full flex flex-row justify-between relative container"
       >
         <img
           src="L-PlantPlace-Index-Logo-bw.png"
-          class="mb-[400px] m-80 ml-[300px]"
+          class="mb-[400px] m-72 ml-[330px]"
         />
-        <div class="align-center"></div>
         <img
           src="/L-PlantPlace-Index-Spread-bw.png"
           alt="photo of plantplace phone screens in black and white"
+          class="plantplace-cover"
         />
         <div
-          class="bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-12"
+          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
         >
-          <h2 class="font-medium text-4xl tracking-tight align-center">
+          <h2 class="font-medium text-4xl tracking-normals align-center">
             plantplace
           </h2>
-          <p class="tracking-wide">
+          <p class="tracking-wide font-medium text-lg">
             A digital marketplace for plant enthusiasts
           </p>
         </div>
@@ -88,137 +95,163 @@ import MySiteLayout from "../layouts/default.astro";
 
     <a href="/projects/arch">
       <div
-        class="bg-[#ECEEF4] mt-16 ml-16 h-[70vh] w-full flex flex-row justify-between relative"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row justify-between relative"
       >
         <img
           src="L-Arch-Index-Logo-bw.png"
-          class="mb-[380px] m-80 ml-[300px]"
+          class="mb-[380px] m-64 ml-[300px]"
         />
         <div class="align-center"></div>
         <img
           src="/L-Arch-Index-Spread-bw.png"
           alt="architecture drawing in black and white"
+          class="arch-cover"
         />
         <div
-          class="bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-12"
+          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
         >
           <h2 class="font-medium text-4xl tracking-tight align-center">
             experıencıng archıtecture
           </h2>
-          <p class="tracking-wide">B. Arch. Thesis - Designing a preschool</p>
+          <p class="tracking-wide font-medium text-lg">
+            B. Arch. Thesis - Designing a preschool
+          </p>
         </div>
       </div>
     </a>
     <div class="pt-28">
-      <h1 class="font-medium text-4xl pl-20">
+      <h1 class="font-medium text-4xl pl-40">
         the
-        <br />
-        <span class="leading-[100px] text-[130px] tracking-tight">extras</span>
+        <span class="leading-[100px] text-[130px] tracking-tight pl-4"
+          >extras</span
+        >
       </h1>
     </div>
 
     <div class="w-screen container mx-auto">
-      <div class="bg-[#ECEEF4] h-[3500px] mt-16 w-full container">
+      <div
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[3300px] mt-16 w-full container"
+      >
         <div class="flex flex-col pl-20 pt-20">
           <h1 class="font-medium text-4xl tracking-tight">poster desıgn</h1>
-          <p class="pt-3 tracking-wide">
+          <p class="pt-3 tracking-wide font-medium text-lg">
             A look into some of my favorite music artists.
           </p>
         </div>
         <div class="flex flex-col">
           <div class="w-full flex flex-row justify-between pt-20 space-x-24">
-            <div class="pl-20"><img src="/MUNA.png" class="h-auto" /></div>
-            <div class="pr-20">
+            <div class="pl-28"><img src="/MUNA.png" class="h-auto" /></div>
+            <div class="pr-28">
               <img src="/solar-power.png" class="h-auto" />
             </div>
           </div>
           <div class="w-full flex flex-row justify-between pt-20 space-x-24">
-            <div class="pl-20"><img src="/Alvvays.png" class="h-auto" /></div>
-            <div class="pr-20"><img src="/alvvays-2.png" class="h-auto" /></div>
+            <div class="pl-28"><img src="/Alvvays.png" class="h-auto" /></div>
+            <div class="pr-28"><img src="/alvvays-2.png" class="h-auto" /></div>
           </div>
           <div class="w-full flex flex-row justify-between pt-20 space-x-24">
-            <div class="pl-20"><img src="/BigThief.png" class="h-auto" /></div>
-            <div class="pr-20"><img src="/charli.png" class="h-auto" /></div>
+            <div class="pl-28"><img src="/BigThief.png" class="h-auto" /></div>
+            <div class="pr-28"><img src="/charli.png" class="h-auto" /></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="w-screen container mx-auto">
-      <div
-        class="bg-[#ECEEF4] h-[70vh] mt-52 ml-16 w-11/12 flex flex-row align-center"
-      >
-        <div class="flex-col flex justify-center pl-40">
-          <div class="justify-center">
-            <h1 class="font-medium leading-[42px] text-[130px] tracking-tight">
-              about<br />
-              <span class="text-4xl pl-[310px] tracking-normal">me</span>
-            </h1>
-          </div>
-          <p class="pt-20 w-11/12 tracking-wide">
-            Welcome to my website! I’m an aspiring UX designer with a background
-            in architectural design.<br />
-            <br />
-            I graduated from Virginia Tech in 2020 with a Bachelor of Architecture
-            and have since been working at a global engineering/architecture firm.
-            After being introduced to Figma in late 2022, I quickly gained interest
-            in web and mobile app design. I was already familiar with the iterative
-            process of design in architecture, but I found the continuous testing
-            and turnaround to be quicker with user experience design. I gravitated
-            towards the immediate and direct nature of incorporating user feedback.<br
-            />
-            <br />
-            On this site you’ll find ongoing personal UX/UI projects, one of my personal
-            architecture design projects, as well as some things I design for fun.
-            Join me as I continue to explore our world of user experiences.
-          </p>
+    <div
+      class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[70vh] mt-32 w-full flex flex-row align-center"
+    >
+      <div class="flex-col flex justify-center pl-40">
+        <div class="justify-center">
+          <h1 class="font-medium leading-[42px] text-[130px] tracking-tight">
+            about<span class="text-4xl pl-8 tracking-normal">me</span>
+          </h1>
         </div>
-        <img
-          src="/join-me-photo.png"
-          alt="photo of me"
-          class="-mb-80 join-me-photo"
-        />
+        <p class="pt-20 w-full tracking-wide">
+          Welcome to my website! I’m an aspiring UX designer with a background
+          in architectural design.<br />
+          <br />
+          I graduated from Virginia Tech in 2020 with a Bachelor of Architecture
+          and have since been working at a global engineering/architecture firm.
+          After being introduced to Figma in late 2022, I quickly gained interest
+          in web and mobile app design. I was already familiar with the iterative
+          process of design in architecture, but I found the continuous testing and
+          turnaround to be quicker with user experience design. I gravitated towards
+          the immediate and direct nature of incorporating user feedback.<br />
+          <br />
+          On this site you’ll find ongoing personal UX/UI projects, one of my personal
+          architecture design projects, as well as some things I design for fun.
+          Join me as I continue to explore our world of user experiences.
+        </p>
       </div>
+      <img
+        src="/join-me-photo.png"
+        alt="photo of me"
+        class="-mb-80 mt-24 join-me-photo"
+      />
     </div>
   </div>
+
+  <style>
+    .hover {
+      filter: grayscale(100%);
+      transition: 0.3s;
+    }
+    .hover:hover {
+      filter: none;
+    }
+    h2 {
+      font-weight: bold;
+      font-family: "Alexandria", sans-serif;
+    }
+
+    .uxtitle {
+      max-width: 15%;
+      max-height: auto;
+    }
+
+    .archtitle {
+      max-width: 50%;
+      max-height: auto;
+    }
+
+    .im-mina-photo {
+      filter: none;
+    }
+
+    .im-mina-photo:hover {
+      content: url("im-mina-photo-outline.png");
+    }
+
+    .join-me-photo {
+      filter: none;
+    }
+
+    .join-me-photo:hover {
+      content: url("join-me-photo-outline.png");
+    }
+
+    .nutrie-cover {
+      filter: none;
+    }
+
+    .nutrie-cover:hover {
+      content: url("L-Nutrie-Index-Spread-color.png");
+    }
+
+    .plantplace-cover {
+      filter: none;
+    }
+
+    .plantplace-cover:hover {
+      content: url("L-PlantPlace-Index-Row-color.png");
+    }
+
+    .arch-cover {
+      filter: none;
+    }
+
+    .arch-cover:hover {
+      content: url("L-Arch-Index-Spread-color.png");
+    }
+  </style>
 </MySiteLayout>
-
-<style>
-  .hover {
-    filter: grayscale(100%);
-    transition: 0.3s;
-  }
-  .hover:hover {
-    filter: none;
-  }
-  h2 {
-    font-weight: bold;
-    font-family: "Alexandria", sans-serif;
-  }
-
-  .uxtitle {
-    max-width: 15%;
-    max-height: auto;
-  }
-
-  .archtitle {
-    max-width: 50%;
-    max-height: auto;
-  }
-
-  .im-mina-photo {
-    filter: none;
-  }
-
-  .im-mina-photo:hover {
-    content: url("im-mina-photo-outline.png");
-  }
-
-  .join-me-photo {
-    filter: none;
-  }
-
-  .join-me-photo:hover {
-    content: url("join-me-photo-outline.png");
-  }
-</style>
