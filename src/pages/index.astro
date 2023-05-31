@@ -16,9 +16,9 @@ import MySiteLayout from "../layouts/default.astro";
           >
         </h1>
         <h2 class="font-medium text-4xl pl-40 pt-32 tracking-tight">
-          an <span class="text-[#C467F0]">archıtectural desıgner</span><br />
-          strıvıng to support people wıth<br />
-          thoughtful <span class="text-[#7692F6]">user experıences</span>.
+          an <span class="text-[#C467F0]">archıtectural desıgner</span>
+          strıvıng to create thoughtful
+          <span class="text-[#7692F6]">user experıences</span> to support people.
         </h2>
         <h3 class="font-medium text-xl pl-40 tracking-tight pt-10">
           (and have fun whıle doıng so!)
@@ -31,7 +31,7 @@ import MySiteLayout from "../layouts/default.astro";
       />
     </div>
 
-    <div class="pt-20">
+    <div class="pt-20" id="work">
       <h1 class="font-medium text-4xl pl-40">
         my
         <span class="leading-[100px] text-[130px] tracking-tight pl-2"
@@ -42,20 +42,15 @@ import MySiteLayout from "../layouts/default.astro";
 
     <a href="/projects/nutrie">
       <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row justify-between relative container group"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row relative group"
       >
-        <img
-          src="L-Nutrie-Index-Logo-bw.png"
-          class="mb-[350px] m-80 ml-[370px]"
-        />
-
-        <img
-          src="/L-Nutrie-Index-Spread-bw.png"
-          alt="photo of nutrie phone screens in black and white"
-          class="nutrie-cover"
-        />
         <div
-          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-40 flex justify-center items-center"
+        >
+          <img src="L-Nutrie-reg-logo.svg" class="nutrie-logo" />
+        </div>
+        <div
+          class="dark:bg-[#000000] z-50 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
         >
           <h2 class="font-medium text-4xl tracking-normal align-center">
             nutrıe
@@ -64,62 +59,72 @@ import MySiteLayout from "../layouts/default.astro";
             A mobile app for guided intuitive meal planning
           </p>
         </div>
+        <img
+          src="L-Nutrie-Index-Spread-color.png"
+          alt="photo of nutrie phone screens"
+          class="absolute h-full object-cover right-0 grayscale group-hover:grayscale-0"
+        />
       </div>
     </a>
 
     <a href="/projects/plantplace">
       <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-24 h-[70vh] w-full flex flex-row justify-between relative container"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-24 h-[70vh] w-full flex flex-row relative group"
       >
-        <img
-          src="L-PlantPlace-Index-Logo-bw.png"
-          class="mb-[400px] m-72 ml-[330px]"
-        />
-        <img
-          src="/L-PlantPlace-Index-Spread-bw.png"
-          alt="photo of plantplace phone screens in black and white"
-          class="plantplace-cover"
-        />
         <div
-          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-50 flex justify-center items-center"
         >
-          <h2 class="font-medium text-4xl tracking-normals align-center">
-            plantplace
-          </h2>
-          <p class="tracking-wide font-medium text-lg">
-            A digital marketplace for plant enthusiasts
-          </p>
+          <img
+            src="L-PlantPlace-shiny-logo.svg"
+            class="grayscale group-hover:grayscale-0"
+          />
+          <div
+            class="dark:bg-[#000000] z-50 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full group-hover:w-2/3 transition-all duration-700 z-40 bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+          >
+            <h2 class="font-medium text-4xl tracking-normals align-center">
+              plantplace
+            </h2>
+            <p class="tracking-wide font-medium text-lg">
+              A digital marketplace for plant enthusiasts
+            </p>
+          </div>
         </div>
+        <img
+          src="/L-PlantPlace-Index-Row-color.png"
+          alt="photo of plantplace phone screens"
+          class="absolute h-full object-cover right-0 grayscale group-hover:grayscale-0"
+        />
       </div>
     </a>
 
     <a href="/projects/arch">
       <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row justify-between relative"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row relative group"
       >
-        <img
-          src="L-Arch-Index-Logo-bw.png"
-          class="mb-[380px] m-64 ml-[300px]"
-        />
-        <div class="align-center"></div>
-        <img
-          src="/L-Arch-Index-Spread-bw.png"
-          alt="architecture drawing in black and white"
-          class="arch-cover"
-        />
         <div
-          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-50 flex justify-center items-center"
         >
-          <h2 class="font-medium text-4xl tracking-tight align-center">
+          <img src="L-Arch-reg-logo.svg" class="arch-logo" />
+        </div>
+        <div
+          class="dark:bg-[#000000] z-50 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+        >
+          <h2 class="font-medium text-4xl tracking-normal align-center">
             experıencıng archıtecture
           </h2>
           <p class="tracking-wide font-medium text-lg">
             B. Arch. Thesis - Designing a preschool
           </p>
         </div>
+        <img
+          src="/L-Arch-Index-Spread-color.png"
+          alt="architecture drawing"
+          class="absolute h-full object-cover right-0 grayscale group-hover:grayscale-0"
+        />
       </div>
     </a>
-    <div class="pt-28">
+
+    <div class="pt-28" id="extras">
       <h1 class="font-medium text-4xl pl-40">
         the
         <span class="leading-[100px] text-[130px] tracking-tight pl-4"
@@ -147,10 +152,14 @@ import MySiteLayout from "../layouts/default.astro";
           </div>
           <div class="w-full flex flex-row justify-between pt-20 space-x-24">
             <div class="pl-28"><img src="/Alvvays.png" class="h-auto" /></div>
-            <div class="pr-28"><img src="/alvvays-2.png" class="h-auto" /></div>
+            <div class="pr-28">
+              <img src="/alvvays-2.png" class="h-auto" />
+            </div>
           </div>
           <div class="w-full flex flex-row justify-between pt-20 space-x-24">
-            <div class="pl-28"><img src="/BigThief.png" class="h-auto" /></div>
+            <div class="pl-28">
+              <img src="/BigThief.png" class="h-auto" />
+            </div>
             <div class="pr-28"><img src="/charli.png" class="h-auto" /></div>
           </div>
         </div>
@@ -161,7 +170,7 @@ import MySiteLayout from "../layouts/default.astro";
       class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[70vh] mt-32 w-full flex flex-row align-center"
     >
       <div class="flex-col flex justify-center pl-40">
-        <div class="justify-center">
+        <div class="justify-center" id="about-me">
           <h1 class="font-medium leading-[42px] text-[130px] tracking-tight">
             about<span class="text-4xl pl-8 tracking-normal">me</span>
           </h1>
@@ -192,26 +201,9 @@ import MySiteLayout from "../layouts/default.astro";
   </div>
 
   <style>
-    .hover {
-      filter: grayscale(100%);
-      transition: 0.3s;
-    }
-    .hover:hover {
-      filter: none;
-    }
     h2 {
       font-weight: bold;
       font-family: "Alexandria", sans-serif;
-    }
-
-    .uxtitle {
-      max-width: 15%;
-      max-height: auto;
-    }
-
-    .archtitle {
-      max-width: 50%;
-      max-height: auto;
     }
 
     .im-mina-photo {
@@ -230,28 +222,28 @@ import MySiteLayout from "../layouts/default.astro";
       content: url("join-me-photo-outline.png");
     }
 
-    .nutrie-cover {
+    .nutrie-logo {
       filter: none;
     }
 
-    .nutrie-cover:hover {
-      content: url("L-Nutrie-Index-Spread-color.png");
+    .nutrie-logo:hover {
+      content: url("L-Nutrie-shiny-logo.svg");
     }
 
-    .plantplace-cover {
+    .plantplace-logo {
       filter: none;
     }
 
-    .plantplace-cover:hover {
-      content: url("L-PlantPlace-Index-Row-color.png");
+    .plantplace-logo:hover {
+      content: url("L-PlantPlace-shiny-logo.svg");
     }
 
-    .arch-cover {
+    .arch-logo {
       filter: none;
     }
 
-    .arch-cover:hover {
-      content: url("L-Arch-Index-Spread-color.png");
+    .arch-logo:hover {
+      content: url("L-Arch-shiny-logo.svg");
     }
   </style>
 </MySiteLayout>
