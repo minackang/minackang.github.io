@@ -8,41 +8,47 @@ import MySiteLayout from "../layouts/default.astro";
       class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[70vh] mt-52 w-3/4 flex flex-row align-center"
     >
       <div class="flex flex-col justify-center">
-        <h1 class="font-medium text-4xl pl-40">
-          ı'm
-          <span
-            class="leading-[100px] text-[130px] tracking-tight pl-2 font-medium"
-            >mına</span
+        <div class="flex flex-row">
+          <h6 class="text-5xl leading-[67px] pl-40">
+            <em>ı'm</em>
+          </h6>
+          <h1
+            class="leading-[7px] text-[130px] tracking-tight pl-4 font-medium"
           >
-        </h1>
+            mına
+          </h1>
+        </div>
         <h2 class="font-medium text-4xl pl-40 pt-32 tracking-tight">
           an <span class="text-[#C467F0]">archıtectural desıgner</span>
           strıvıng to create thoughtful
-          <span class="text-[#7692F6]">user experıences</span> to support people.
+          <span class="text-[#7692F6]">user experıences</span>
+          <br />to support people.
         </h2>
-        <h3 class="font-medium text-xl pl-40 tracking-tight pt-10">
-          (and have fun whıle doıng so!)
-        </h3>
+        <h6 class="text-3xl pl-40 tracking-tight pt-10">
+          <em>(and have fun whıle doıng so!)</em>
+        </h6>
       </div>
       <img
         src="/im-mina-photo.png"
         alt="photo of me"
-        class="-mr-96 rotate-[352deg] im-mina-photo"
+        class="-mr-72 rotate-[352deg] im-mina-photo"
       />
     </div>
 
-    <div class="pt-20" id="work">
-      <h1 class="font-medium text-4xl pl-40">
-        my
-        <span class="leading-[100px] text-[130px] tracking-tight pl-2"
-          >work</span
-        >
-      </h1>
+    <div class="pt-36" id="work">
+      <div class="flex flex-row">
+        <h6 class="text-5xl leading-[67px] pl-40">
+          <em>my</em>
+        </h6>
+        <h1 class="leading-[7px] text-[130px] tracking-tight pl-4 font-medium">
+          work
+        </h1>
+      </div>
     </div>
 
     <a href="/projects/nutrie">
       <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row relative group"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-10 h-[70vh] w-full flex flex-row relative group"
       >
         <div
           class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-40 flex justify-center items-center"
@@ -72,14 +78,14 @@ import MySiteLayout from "../layouts/default.astro";
         class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-24 h-[70vh] w-full flex flex-row relative group"
       >
         <div
-          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-50 flex justify-center items-center"
+          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-30 flex justify-center items-center"
         >
           <img
             src="L-PlantPlace-shiny-logo.svg"
             class="grayscale group-hover:grayscale-0"
           />
           <div
-            class="dark:bg-[#000000] z-50 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full group-hover:w-2/3 transition-all duration-700 z-40 bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+            class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full group-hover:w-2/3 transition-all duration-700 z-40 bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
           >
             <h2 class="font-medium text-4xl tracking-normals align-center">
               plantplace
@@ -102,12 +108,15 @@ import MySiteLayout from "../layouts/default.astro";
         class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row relative group"
       >
         <div
-          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-50 flex justify-center items-center"
+          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-30 flex justify-center items-center"
         >
-          <img src="L-Arch-reg-logo.svg" class="arch-logo" />
+          <img
+            src="L-Arch-reg-logo.svg"
+            class="grayscale group-hover:grayscale-0"
+          />
         </div>
         <div
-          class="dark:bg-[#000000] z-50 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+          class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
         >
           <h2 class="font-medium text-4xl tracking-normal align-center">
             experıencıng archıtecture
@@ -124,18 +133,20 @@ import MySiteLayout from "../layouts/default.astro";
       </div>
     </a>
 
-    <div class="pt-28" id="extras">
-      <h1 class="font-medium text-4xl pl-40">
-        the
-        <span class="leading-[100px] text-[130px] tracking-tight pl-4"
-          >extras</span
-        >
-      </h1>
+    <div class="pt-36" id="extras">
+      <div class="flex flex-row">
+        <h6 class="leading-[67px] text-5xl pl-40">
+          <em>the</em>
+        </h6>
+        <h1 class="leading-[7px] text-[130px] tracking-tight pl-4 font-medium">
+          extras
+        </h1>
+      </div>
     </div>
 
     <div class="w-screen container mx-auto">
       <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[3300px] mt-16 w-full container"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[4300px] mt-10 w-full container"
       >
         <div class="flex flex-col pl-20 pt-20">
           <h1 class="font-medium text-4xl tracking-tight">poster desıgn</h1>
@@ -147,7 +158,7 @@ import MySiteLayout from "../layouts/default.astro";
           <div class="w-full flex flex-row justify-between pt-20 space-x-24">
             <div class="pl-28"><img src="/MUNA.png" class="h-auto" /></div>
             <div class="pr-28">
-              <img src="/solar-power.png" class="h-auto" />
+              <img src="/beths.png" class="h-auto" />
             </div>
           </div>
           <div class="w-full flex flex-row justify-between pt-20 space-x-24">
@@ -162,6 +173,14 @@ import MySiteLayout from "../layouts/default.astro";
             </div>
             <div class="pr-28"><img src="/charli.png" class="h-auto" /></div>
           </div>
+          <div class="w-full flex flex-row justify-between pt-20 space-x-24">
+            <div class="pl-28">
+              <img src="/solar-power.png" class="h-auto" />
+            </div>
+            <div class="pr-28">
+              <img src="/charli.png" class="h-auto opacity-0" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -171,9 +190,11 @@ import MySiteLayout from "../layouts/default.astro";
     >
       <div class="flex-col flex justify-center pl-40">
         <div class="justify-center" id="about-me">
-          <h1 class="font-medium leading-[42px] text-[130px] tracking-tight">
-            about<span class="text-4xl pl-8 tracking-normal">me</span>
-          </h1>
+          <div class="flex flex-row">
+            <h1 class="font-medium leading-[7px] text-[130px] tracking-tight">
+              about
+            </h1><h6 class="leading-[67px] text-5xl pl-8"><em>me</em></h6>
+          </div>
         </div>
         <p class="pt-20 w-full tracking-wide">
           Welcome to my website! I’m an aspiring UX designer with a background

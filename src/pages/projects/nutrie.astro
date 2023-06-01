@@ -17,14 +17,13 @@ import MySiteLayout from "../../layouts/default.astro";
       class="opacity-0"
     />
     <div
-      class="dark:bg-[#000000] z-50 dark:bg-opacity-50 bg-[#FFFFFF] h-[200px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+      class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[200px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
     >
       <h1 class="text-[4rem] font-semibold">nutrie</h1>
       <h2 class="text-[2.25rem] tracking-wide font-extralight header2">
         a mobile app for guided intuitive meal planning
       </h2>
     </div>
-    <div class="bg-[#3a3a3a] w-full"></div>
   </div>
 
   <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
@@ -62,13 +61,15 @@ import MySiteLayout from "../../layouts/default.astro";
         class="pb-20"
       />
     </div>
-    <div class="max-w-3xl mx-auto">
-      <h3
-        class="font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] text-[#7692F6]"
-      >
-        scroll down to design
-      </h3>
-    </div>
+    <a href="#design"
+      ><div class="max-w-3xl mx-auto">
+        <h3
+          class="font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] text-[#7692F6]"
+        >
+          scroll down to design
+        </h3>
+      </div>
+    </a>
   </div>
   <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
     <article class="max-w-3xl mx-auto tracking-wider">
@@ -150,7 +151,7 @@ import MySiteLayout from "../../layouts/default.astro";
       </ol>
     </article>
   </div>
-  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
+  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]" id="design">
     <article class="max-w-3xl mx-auto tracking-wider">
       <h3 class="text-[2.25rem] pt-16 pb-10">the design</h3>
       <h4 class="text-[1.5rem] pb-5 tracking-normal">onboarding</h4>
@@ -219,7 +220,7 @@ import MySiteLayout from "../../layouts/default.astro";
       />
     </div>
   </div>
-  <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
+  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
     <article class="max-w-3xl mx-auto tracking-wider">
       <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">meal planning</h4>
       <p class="pb-20">
@@ -260,54 +261,59 @@ import MySiteLayout from "../../layouts/default.astro";
       />
     </div>
   </div>
-  <article class="max-w-3xl mx-auto tracking-wider">
-    <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">progress tracking</h4>
-    <p class="pb-20">
-      Each category's completion level is recorded in the form of colored rings
-      indicating daily progress (n). This visual is intended to encourage users
-      to record consistently on the app and hold themselves accountable. They
-      can also reflect on their monthly progress.
-    </p>
-  </article>
-  <div class="framen pb-20">
-    <img
-      src="/L-Nutrie-frame-n.png"
-      alt="screens showing daily and monthly progress tracking"
-    />
-  </div>
-  <article class="max-w-3xl mx-auto tracking-wider">
-    <p class="pb-20">
-      The daily journal keeps track of the user’s mental and physical wellness
-      and provides a space to add notes (o). Once again, the intent is to keep
-      the information organized to reduce the amount of effort involved in
-      forming healthy, consistent eating habits. The user can allow their
-      therapist or dietitian to view whichever journal entries they choose,
-      ensuring that the user is in control of their data.
-    </p>
-  </article>
-  <div class="frame1x2 pb-20">
-    <img
-      src="/L-Nutrie-frame-o.png"
-      alt="screens showing daily journal entry and calendar"
-    />
-  </div>
-  <article class="max-w-3xl mx-auto tracking-wider">
-    <p class="pb-20">
-      The app also tracks fluctuations in the user’s daily overall wellness (p)
-      and the likelihood of certain foods to cause them discomfort, allowing the
-      app to suggest foods to avoid (q). Finding a meal regimen that works for
-      each individual is constantly evolving. Nutrie streamlines this process by
-      providing a space to reflect on past meal routines, record current eating
-      habits, and plan future routines utilizing the collected data.
-    </p>
-  </article>
-  <div class="frame1x2 pb-20">
-    <img
-      src="/L-Nutrie-frame-p-q.png"
-      alt="screens showing graphs for overall wellness and foods to be mindful of"
-    />
-  </div>
   <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
+    <article class="max-w-3xl mx-auto tracking-wider">
+      <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">
+        progress tracking
+      </h4>
+      <p class="pb-20">
+        Each category's completion level is recorded in the form of colored
+        rings indicating daily progress (n). This visual is intended to
+        encourage users to record consistently on the app and hold themselves
+        accountable. They can also reflect on their monthly progress.
+      </p>
+    </article>
+    <div class="framen pb-20">
+      <img
+        src="/L-Nutrie-frame-n.png"
+        alt="screens showing daily and monthly progress tracking"
+      />
+    </div>
+    <article class="max-w-3xl mx-auto tracking-wider">
+      <p class="pb-20">
+        The daily journal keeps track of the user’s mental and physical wellness
+        and provides a space to add notes (o). Once again, the intent is to keep
+        the information organized to reduce the amount of effort involved in
+        forming healthy, consistent eating habits. The user can allow their
+        therapist or dietitian to view whichever journal entries they choose,
+        ensuring that the user is in control of their data.
+      </p>
+    </article>
+    <div class="frame1x2 pb-20">
+      <img
+        src="/L-Nutrie-frame-o.png"
+        alt="screens showing daily journal entry and calendar"
+      />
+    </div>
+    <article class="max-w-3xl mx-auto tracking-wider">
+      <p class="pb-20">
+        The app also tracks fluctuations in the user’s daily overall wellness
+        (p) and the likelihood of certain foods to cause them discomfort,
+        allowing the app to suggest foods to avoid (q). Finding a meal regimen
+        that works for each individual is constantly evolving. Nutrie
+        streamlines this process by providing a space to reflect on past meal
+        routines, record current eating habits, and plan future routines
+        utilizing the collected data.
+      </p>
+    </article>
+    <div class="frame1x2 pb-20">
+      <img
+        src="/L-Nutrie-frame-p-q.png"
+        alt="screens showing graphs for overall wellness and foods to be mindful of"
+      />
+    </div>
+  </div>
+  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
     <article class="max-w-3xl mx-auto tracking-wider">
       <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">communication</h4>
       <p class="pb-5">
@@ -331,33 +337,33 @@ import MySiteLayout from "../../layouts/default.astro";
       />
     </div>
   </div>
-  <article class="max-w-3xl mx-auto tracking-wider">
-    <h3 class="text-[2.25rem] pt-16 pb-5">looking forward</h3>
-    <p class="pb-5">
-      Nutrie is a work in progress. In the future, I would like to add:
-    </p>
-    <ul class="list-disc pl-5">
-      <li>user interface for the dietitian and therapist</li>
-      <li class="pt-2">
-        interface for having a virtual appointment with practitioner
-      </li>
-      <li class="pt-2">
-        keyword detection to quickly save an item to a meal and having a
-        favorite items list
-      </li>
-      <li class="pt-2">dropdown suggestions for input fields</li>
-      <li class="pt-2 pb-40">personalized goal setting</li>
-    </ul>
-  </article>
-  <a href="/projects/plantplace"
-    ><div class="pl-10">
-      <h3
-        class="font-medium text-[2.25rem] pt-10 pb-20 h3font hover:text-[#2E5CFF] text-[#7692F6]"
-      >
-        next project: PlantPlace
-      </h3>
-    </div>
-  </a>
+  <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
+    <article class="max-w-3xl mx-auto tracking-wider">
+      <h3 class="text-[2.25rem] pt-16 pb-5">looking forward</h3>
+      <p class="pb-5">
+        Nutrie is a work in progress. In the future, I would like to add:
+      </p>
+      <ul class="list-disc pl-5">
+        <li>user interface for the dietitian and therapist</li>
+        <li class="pt-2">
+          interface for having a virtual appointment with practitioner
+        </li>
+        <li class="pt-2">
+          keyword detection to quickly save an item to a meal and having a
+          favorite items list
+        </li>
+        <li class="pt-2">dropdown suggestions for input fields</li>
+        <li class="pt-2 pb-40">personalized goal setting</li>
+      </ul>
+      <a href="/projects/plantplace">
+        <h3
+          class="font-medium text-[2.25rem] pt-10 pb-20 h3font hover:text-[#2E5CFF] text-[#7692F6]"
+        >
+          Next: PlantPlace
+        </h3>
+      </a>
+    </article>
+  </div>
 </MySiteLayout>
 
 <style>
