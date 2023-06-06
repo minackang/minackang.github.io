@@ -53,7 +53,8 @@ import MySiteLayout from "../layouts/default.astro";
         <div
           class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-40 flex justify-center items-center"
         >
-          <img src="L-Nutrie-reg-logo.svg" class="nutrie-logo" />
+          <img src="L-Nutrie-reg-logo.svg" class="block group-hover:hidden" />
+          <img src="L-Nutrie-shiny-logo.svg" class="hidden group-hover:block" />
         </div>
         <div
           class="dark:bg-[#000000] z-50 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
@@ -241,14 +242,6 @@ import MySiteLayout from "../layouts/default.astro";
 
     .join-me-photo:hover {
       content: url("join-me-photo-outline.png");
-    }
-
-    .nutrie-logo {
-      filter: none;
-    }
-
-    .nutrie-logo:hover {
-      content: url("L-Nutrie-shiny-logo.svg");
     }
 
     .plantplace-logo {
