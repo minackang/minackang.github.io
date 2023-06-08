@@ -27,6 +27,10 @@ const { backgroundVisible } = Astro.props;
     />
     <link rel="stylesheet" href="https://use.typekit.net/afz1ogo.css" />
     <link rel="stylesheet" href="global.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- <BaseHead title={title}/> -->
   </head>
   <body class="dark:bg-[#3a3a3a] bg-[#f4f4f4] dark:text-white text-[#3A3A3A]">
@@ -35,42 +39,42 @@ const { backgroundVisible } = Astro.props;
     <nav class="fixed top-0 flex w-full flex-row justify-between p-10 z-50">
       <div class="flex flex-row gap-12">
         <a href="/">
-          <h1 class="text-2xl hover:text-[#939393] font-light">
+          <h1 class="text-xl hover:text-[#939393] font-light">
             {"home"}
           </h1>
         </a>
-        <a href="#work">
-          <h1 class="hover:text-[#939393] font-light text-2xl">work</h1>
+        <a href="/#work">
+          <h1 class="hover:text-[#939393] font-light text-xl">work</h1>
         </a>
-        <a href="#extras">
-          <h1 class="hover:text-[#939393] font-light text-2xl">extras</h1>
+        <a href="/#extras">
+          <h1 class="hover:text-[#939393] font-light text-xl">extras</h1>
         </a>
-        <a href="#about-me">
-          <h1 class="hover:text-[#939393] font-light text-2xl">about</h1>
+        <a href="/#about-me">
+          <h1 class="hover:text-[#939393] font-light text-xl">about</h1>
         </a>
       </div>
-      <div class="flex flex-row gap-2">
+      <div class="flex flex-row gap-2 w-14">
         <button data-dark-mode-button>
           <img
-            src="/empty-moon.svg"
+            src="/icons/empty-moon.svg"
             alt="dark mode icon"
             class="block dark:hidden"
           />
           <img
-            src="/filled-moon.svg"
+            src="/icons/filled-moon.svg"
             alt="dark mode icon"
             class="hidden dark:block"
           />
         </button>
         <button data-light-mode-button>
           <img
-            src="/filled-sun.svg"
+            src="/icons/filled-sun.svg"
             alt="light mode icon"
             class="block dark:hidden"
           />
           <img
-            src="/empty-sun.svg"
-            alt="dark mode icon"
+            src="/icons/empty-sun.svg"
+            alt="light mode icon"
             class="hidden dark:block"
           />
         </button>
@@ -114,7 +118,7 @@ const { backgroundVisible } = Astro.props;
     </nav>
     <div class="fixed bottom-0 right-0 z-50 p-10">
       <a href="#top">
-        <h1 class="hover:text-[#939393] font-light text-2xl">back to top</h1>
+        <h1 class="hover:text-[#939393] font-light text-xl">back to top</h1>
       </a>
     </div>
     <article>

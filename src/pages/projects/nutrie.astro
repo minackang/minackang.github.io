@@ -5,22 +5,22 @@ import MySiteLayout from "../../layouts/default.astro";
 <MySiteLayout>
   <div class="w-full">
     <img
-      src="/L-Nutrie-page-static-image.png"
+      src="/nutrie/L-Nutrie-page-static-image.png"
       alt="Nutrie phone frames"
       class="-z-50 fixed"
     />
   </div>
   <div class="w-full flex flex-col relative">
     <img
-      src="/L-Nutrie-page-static-image.png"
+      src="/nutrie/L-Nutrie-page-static-image.png"
       alt="Nutrie phone frames"
       class="opacity-0"
     />
     <div
-      class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[200px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+      class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
     >
-      <h1 class="text-[4rem] font-semibold">nutrie</h1>
-      <h2 class="text-[2.25rem] tracking-wide font-extralight header2">
+      <h1 class="text-[4rem] font-semibold">nutrıe</h1>
+      <h2 class="text-[2.25rem] tracking-wide font-extralight leading-6 pb-6">
         a mobile app for guided intuitive meal planning
       </h2>
     </div>
@@ -30,15 +30,15 @@ import MySiteLayout from "../../layouts/default.astro";
     <article class="max-w-3xl mx-auto pt-8 tracking-wider flex flex-col">
       <h3 class="text-[2.25rem] pt-20 pb-10">tl;dr</h3>
       <p>
-        <strong class="font-bold">The Problem:</strong>Meal planning apps on the
-        market measure success through numbers, encouraging a rigid eating
-        structure. This can be overwhelming and discouraging for someone who
-        struggles with balanced, unrestrictive eating.
+        <strong class="font-bold">The Problem:</strong> Meal planning apps on the
+        market measure success through numbers, encouraging a rigid eating structure.
+        This can be overwhelming and discouraging for someone who struggles with
+        balanced, unrestrictive eating.
         <br />
         <br />
-        <strong class="font-bold">The Solution:</strong>Nutrie is a meal
-        planning app that caters towards people who would like to build more
-        regular eating habits in an intuitive way.
+        <strong class="font-bold">The Solution:</strong> Nutrie is a meal planning
+        app that caters towards people who would like to build more regular eating
+        habits in an intuitive way.
       </p>
       <br />
       Here are a few ways Nutrie creates a more encouraging environment for this
@@ -56,7 +56,7 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
     <div class="welcome">
       <img
-        src="/L-Nutrie-welcome-screen.png"
+        src="/nutrie/L-Nutrie-welcome-screen.png"
         alt="Nutrie welcome screen"
         class="pb-20"
       />
@@ -64,9 +64,9 @@ import MySiteLayout from "../../layouts/default.astro";
     <a href="#design"
       ><div class="max-w-3xl mx-auto">
         <h3
-          class="font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] text-[#7692F6]"
+          class="font-medium text-[2.25rem] pt-10 pb-10 h3font dark:hover:text-[#A2B6FF] hover:text-[#2E5CFF] text-[#6889FF] inline-block"
         >
-          scroll down to design
+          scroll down to desıgn
         </h3>
       </div>
     </a>
@@ -128,8 +128,14 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
     <div class="comparative pb-20">
       <img
-        src="/L-Nutrie-comp-analysis.png"
+        src="/nutrie/L-Nutrie-comp-analysis.png"
         alt="Comparative analysis chart between different meal planning apps"
+        class="block dark:hidden"
+      />
+      <img
+        src="/nutrie/D-Nutrie-comp-analysis.png"
+        alt="Comparative analysis chart between different meal planning apps"
+        class="hidden dark:block"
       />
     </div>
     <article class="max-w-3xl mx-auto tracking-wider">
@@ -153,18 +159,18 @@ import MySiteLayout from "../../layouts/default.astro";
   </div>
   <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]" id="design">
     <article class="max-w-3xl mx-auto tracking-wider">
-      <h3 class="text-[2.25rem] pt-16 pb-10">the design</h3>
+      <h3 class="text-[2.25rem] pt-16 pb-10">the desıgn</h3>
       <h4 class="text-[1.5rem] pb-5 tracking-normal">onboarding</h4>
-      <p class="pb-20">
-        The initial setup for this app includes (a) creating an account, (b)
-        selecting a goal, and (c) matching with a dietitian and/or therapist if
-        applicable. The user is able to select their preferences for the
-        dietitian and therapist to find their best match.
+      <p class="pb-10">
+        The initial setup for this app includes creating an account, selecting a
+        goal, and matching with a dietitian and/or therapist if applicable. The
+        user is able to select their preferences for the dietitian and therapist
+        to find their best match.
       </p>
     </article>
     <div class="frameabc pb-20">
       <img
-        src="/L-Nutrie-frames-a-b-c.png"
+        src="/nutrie/L-Nutrie-frames-a-b-c.png"
         alt="screens showing create account, setup, and match with dietitian"
       />
     </div>
@@ -175,8 +181,14 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
     <div class="navbar pb-20">
       <img
-        src="/L-Nutrie-nav-bar.png"
-        alt="navigation bar: overview, meal planning, progress tracking, communication"
+        src="/nutrie/L-Nutrie-nav-bar.png"
+        alt="navigation bar"
+        class="block dark:hidden"
+      />
+      <img
+        src="/nutrie/D-Nutrie-nav-bar.png"
+        alt="navigation bar"
+        class="hidden dark:block"
       />
     </div>
   </div>
@@ -189,7 +201,7 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
     <div class="frame1x2 pb-20">
       <img
-        src="/settings.png"
+        src="/nutrie/settings.png"
         alt="screens showing light and dark mode options"
       />
     </div>
@@ -199,23 +211,22 @@ import MySiteLayout from "../../layouts/default.astro";
       <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">overview</h4>
       <p class="pb-20">
         Once a meal plan is created, upcoming meals and snacks will appear at
-        the top of the homepage in checklist form. Items move from the Up Next
-        section to the Past section once they have been completed (d).
-        Additional food and water can be added to the daily log (e). Daily
-        progress is viewable with colored rings, encouraging users to fill them
-        (f). A week’s worth of meal plan schedules is listed for easy changes
-        (g).
+        the top of the homepage in checklist form. Items move from the 'Up Next'
+        section to the 'Past' section once they have been completed. Additional
+        food and water can be added to the daily log. Colored rings indicate
+        daily progress, encouraging users to fill them. A week’s worth of meal
+        plan schedules is listed for easy changes.
       </p>
     </article>
-    <div class="framedef pb-20">
+    <div class="frame1x2 pb-20">
       <img
-        src="/L-Nutrie-frame-d-e-f.png"
+        src="/nutrie/L-Nutrie-frame-d-e-f.png"
         alt="screens showing upcoming meals, adding food and water, daily progress rings"
       />
     </div>
     <div class="frameg pb-20">
       <img
-        src="/L-Nutrie-frame-g.png"
+        src="/nutrie/L-Nutrie-frame-g.png"
         alt="screen showing week ahead schedule"
       />
     </div>
@@ -224,39 +235,38 @@ import MySiteLayout from "../../layouts/default.astro";
     <article class="max-w-3xl mx-auto tracking-wider">
       <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">meal planning</h4>
       <p class="pb-20">
-        Daily meal plans are viewable through the calendar (h). This
-        functionality allows the user to view past meal plans as well as set up
-        meal plans for the future. Items can be added (i), titles and times can
-        be changed (j), and frequency per meal plan can be edited (k). This
-        customization allows the user to easily set a regular schedule and
-        adjust as needed. Meal plans can be saved as templates to quickly assign
-        to days, and a search function is available to look through all saved
-        meal plans (l).
+        Daily meal plans are viewable through the calendar. This functionality
+        allows the user to view past meal plans as well as set up meal plans for
+        the future. Items can be added, titles and times can be changed, and
+        frequency per meal plan can be edited. This customization allows the
+        user to easily set a regular schedule and adjust as needed. Meal plans
+        can be saved as templates to quickly assign to days, and a search
+        function is available to look through all saved meal plans.
       </p>
     </article>
     <div class="framehij pb-20">
       <img
-        src="/L-Nutrie-frame-h-i-j.png"
+        src="/nutrie/L-Nutrie-frame-h-i-j.png"
         alt="screens showing calendar and editing meal plan"
       />
     </div>
     <div class="frame1x2 pb-20">
       <img
-        src="/L-Nutrie-frame-k-l.png"
+        src="/nutrie/L-Nutrie-frame-k-l.png"
         alt="screens showing meal plan frequency and saved meal plans"
       />
     </div>
     <article class="max-w-3xl mx-auto tracking-wider">
       <p class="pb-20">
         Within the editing mode, users can add items from their meal plans to a
-        shopping list by swiping right on the item or the entire group (m). The
+        shopping list by swiping right on the item or the entire group. The
         intent is to minimize mental load by keeping everything organized in one
         place.
       </p>
     </article>
     <div class="frame1x2 pb-20">
       <img
-        src="/L-Nutrie-frame-m.png"
+        src="/nutrie/L-Nutrie-frame-m.png"
         alt="screens showing saving items to shopping list"
       />
     </div>
@@ -268,47 +278,46 @@ import MySiteLayout from "../../layouts/default.astro";
       </h4>
       <p class="pb-20">
         Each category's completion level is recorded in the form of colored
-        rings indicating daily progress (n). This visual is intended to
-        encourage users to record consistently on the app and hold themselves
-        accountable. They can also reflect on their monthly progress.
+        rings indicating daily progress. This visual is intended to encourage
+        users to record consistently on the app and hold themselves accountable.
+        They can also reflect on their monthly progress.
       </p>
     </article>
     <div class="framen pb-20">
       <img
-        src="/L-Nutrie-frame-n.png"
+        src="/nutrie/L-Nutrie-frame-n.png"
         alt="screens showing daily and monthly progress tracking"
       />
     </div>
     <article class="max-w-3xl mx-auto tracking-wider">
       <p class="pb-20">
         The daily journal keeps track of the user’s mental and physical wellness
-        and provides a space to add notes (o). Once again, the intent is to keep
-        the information organized to reduce the amount of effort involved in
-        forming healthy, consistent eating habits. The user can allow their
-        therapist or dietitian to view whichever journal entries they choose,
-        ensuring that the user is in control of their data.
+        and provides a space to add notes. Once again, the intent is to keep the
+        information organized to reduce the amount of effort involved in forming
+        healthy, consistent eating habits. The user can allow their therapist or
+        dietitian to view whichever journal entries they choose, ensuring that
+        the user is in control of their data.
       </p>
     </article>
     <div class="frame1x2 pb-20">
       <img
-        src="/L-Nutrie-frame-o.png"
+        src="/nutrie/L-Nutrie-frame-o.png"
         alt="screens showing daily journal entry and calendar"
       />
     </div>
     <article class="max-w-3xl mx-auto tracking-wider">
       <p class="pb-20">
         The app also tracks fluctuations in the user’s daily overall wellness
-        (p) and the likelihood of certain foods to cause them discomfort,
-        allowing the app to suggest foods to avoid (q). Finding a meal regimen
-        that works for each individual is constantly evolving. Nutrie
-        streamlines this process by providing a space to reflect on past meal
-        routines, record current eating habits, and plan future routines
-        utilizing the collected data.
+        and the likelihood of certain foods to cause them discomfort, allowing
+        the app to suggest foods to avoid. Finding a meal regimen that works for
+        each individual is constantly evolving. Nutrie streamlines this process
+        by providing a space to reflect on past meal routines, record current
+        eating habits, and plan future routines utilizing the collected data.
       </p>
     </article>
     <div class="frame1x2 pb-20">
       <img
-        src="/L-Nutrie-frame-p-q.png"
+        src="/nutrie/L-Nutrie-frame-p-q.png"
         alt="screens showing graphs for overall wellness and foods to be mindful of"
       />
     </div>
@@ -318,7 +327,7 @@ import MySiteLayout from "../../layouts/default.astro";
       <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">communication</h4>
       <p class="pb-5">
         Nutrie provides a line of communication between the user and a dietitian
-        and/or therapist (r). The function is intended to be similar to that of
+        and/or therapist. The function is intended to be similar to that of
         BetterHelp, an app for virtual therapy that matches users with a
         professional. Based on their preferences, the users receive personalized
         support.
@@ -327,19 +336,19 @@ import MySiteLayout from "../../layouts/default.astro";
         In Nutrie, the user can choose when to match with a dietitian and/or
         therapist upon making an account. The dietitian and therapist services
         are available, but not required in order to use the app. In-person and
-        virtual appointments are scheduled using the calendar (s).
+        virtual appointments are scheduled using the calendar.
       </p>
     </article>
     <div class="frame1x2 pb-20">
       <img
-        src="/L-Nutrie-frame-r-s.png"
+        src="/nutrie/L-Nutrie-frame-r-s.png"
         alt="screens showing messaging dietitian and appointment calendar"
       />
     </div>
   </div>
   <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
     <article class="max-w-3xl mx-auto tracking-wider">
-      <h3 class="text-[2.25rem] pt-16 pb-5">looking forward</h3>
+      <h3 class="text-[2.25rem] pt-16 pb-5">lookıng forward</h3>
       <p class="pb-5">
         Nutrie is a work in progress. In the future, I would like to add:
       </p>
@@ -355,14 +364,18 @@ import MySiteLayout from "../../layouts/default.astro";
         <li class="pt-2">dropdown suggestions for input fields</li>
         <li class="pt-2 pb-40">personalized goal setting</li>
       </ul>
-      <a href="/projects/plantplace">
-        <h3
-          class="font-medium text-[2.25rem] pt-10 pb-20 h3font hover:text-[#2E5CFF] text-[#7692F6]"
-        >
-          Next: PlantPlace
-        </h3>
-      </a>
     </article>
+    <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
+      <div class="max-w-3xl mx-auto">
+        <a href="/projects/plantplace">
+          <h3
+            class="font-medium text-[2.25rem] pt-10 pb-20 h3font hover:text-[#2E5CFF] text-[#7692F6]"
+          >
+            next: plantplace
+          </h3>
+        </a>
+      </div>
+    </div>
   </div>
 </MySiteLayout>
 
@@ -392,7 +405,7 @@ import MySiteLayout from "../../layouts/default.astro";
   }
 
   .navbar {
-    max-width: 30%;
+    max-width: 40%;
     max-height: auto;
     display: block;
     margin-left: auto;
@@ -408,7 +421,7 @@ import MySiteLayout from "../../layouts/default.astro";
   }
 
   .frameg {
-    max-width: 25%;
+    max-width: 21%;
     max-height: auto;
     display: block;
     margin-left: auto;
