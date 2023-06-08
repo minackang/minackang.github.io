@@ -61,11 +61,13 @@ import MySiteLayout from "../../layouts/default.astro";
         </li>
       </ul>
 
-      <h3
-        class="inline-block font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] text-[#7692F6]"
-      >
-        see redesıgn process
-      </h3>
+      <a href="#redesign"
+        ><h3
+          class="inline-block font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] dark:hover:text-[#A2B6FF] text-[#7692F6]"
+        >
+          see redesıgn process
+        </h3>
+      </a>
     </article>
   </div>
   <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
@@ -87,14 +89,16 @@ import MySiteLayout from "../../layouts/default.astro";
         </li>
       </ul>
 
-      <h3
-        class="font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] text-[#7692F6]"
-      >
-        see orıgınal desıgn
-      </h3>
+      <a href="#original"
+        ><h3
+          class="font-medium text-[2.25rem] pt-10 pb-10 h3font dark:hover:text-[#A2B6FF] hover:text-[#2E5CFF] text-[#7692F6] inline-block"
+        >
+          see orıgınal desıgn
+        </h3>
+      </a>
     </article>
   </div>
-  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
+  <div id="redesign" class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
     <article class="max-w-2xl mx-auto pt-8 tracking-wider">
       <h3 class="text-[2.25rem] pt-16 pb-10">the redesıgn process</h3>
       <h4 class="text-[1.5rem] pb-5 font-medium">identifying the problem</h4>
@@ -189,7 +193,7 @@ import MySiteLayout from "../../layouts/default.astro";
       </p>
     </article>
   </div>
-  <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
+  <div id="original" class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
     <article class="max-w-2xl mx-auto pt-16 tracking-wider">
       <h3 class="text-[2.25rem] pt-6 pb-10">the orıgınal desıgn</h3>
       <h4 class="text-[1.5rem] pb-5 font-medium">iterating with form</h4>
@@ -227,6 +231,12 @@ import MySiteLayout from "../../layouts/default.astro";
       <img
         src="/arch/L-Arch-classroom-sequence.png"
         alt="drawing showing classroom spaces"
+        class="block dark:hidden"
+      />
+      <img
+        src="/arch/D-Arch-classroom-sequence.png"
+        alt="drawing showing classroom spaces"
+        class="hidden dark:block"
       />
     </div>
   </div>
@@ -241,7 +251,16 @@ import MySiteLayout from "../../layouts/default.astro";
       </p>
     </article>
     <div class="publicprivate pb-20">
-      <img src="/arch/L-Arch-public-private.png" alt="drawings of classroom" />
+      <img
+        src="/arch/L-Arch-public-private.png"
+        alt="drawings of classroom"
+        class="block dark:hidden"
+      />
+      <img
+        src="/arch/D-Arch-public-private.png"
+        alt="drawings of classroom"
+        class="hidden dark:block"
+      />
     </div>
     <article class="max-w-2xl mx-auto tracking-wider">
       <p class="pb-10">
@@ -254,10 +273,16 @@ import MySiteLayout from "../../layouts/default.astro";
         <img
           src="/arch/L-Arch-circulation-core.png"
           alt="axonometric drawing of building vestibule"
+          class="block dark:hidden"
+        />
+        <img
+          src="/arch/D-Arch-circulation-core.png"
+          alt="axonometric drawing of building vestibule"
+          class="hidden dark:block"
         />
       </div>
       <h3
-        class="font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] text-[#7692F6]"
+        class="font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] dark:hover:text-[#A2B6FF] text-[#7692F6] inline-block"
       >
         full thesıs documentatıon
       </h3>
@@ -268,7 +293,7 @@ import MySiteLayout from "../../layouts/default.astro";
       <a href="/#extras"
         ><div>
           <h3
-            class="font-medium text-[2.25rem] pt-10 pb-16 h3font hover:text-[#2E5CFF] text-[#7692F6]"
+            class="font-medium text-[2.25rem] pt-10 pb-16 h3font hover:text-[#2E5CFF] text-[#7692F6] dark:hover:text-[#A2B6FF] inline-block"
           >
             next: the extras
           </h3>
