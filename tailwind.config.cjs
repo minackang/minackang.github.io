@@ -5,5 +5,8 @@ module.exports = {
 		extend: {},
 	},
 	plugins: [],
-	darkMode: 'class'
+	darkMode: 'class',
+	experimental: {
+		optimizeUniversalDefaults:true
+	}
 }
