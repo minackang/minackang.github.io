@@ -5,51 +5,56 @@ import MySiteLayout from "../layouts/default.astro";
 <MySiteLayout>
   <div class="w-3/4 container mx-auto">
     <div
-      class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[70vh] mt-52 w-full flex flex-row align-center drop-shadow-md"
+      class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[70vh] md:pb-0 pb-10 mt-52 w-full flex flex-col-reverse xl:flex-row align-center drop-shadow-md"
     >
       <div class="flex flex-col justify-center">
         <div class="flex flex-row">
-          <h6 class="text-5xl leading-[67px] pl-40">
+          <h6
+            class="text-3xl md:text-5xl md:leading-[77px] leading-[50px] md:pl-40 pl-10"
+          >
             <em>ı'm</em>
           </h6>
           <h1
-            class="leading-[7px] text-[130px] tracking-tight pl-4 font-medium"
+            class="leading-[7px] text-[80px] md:text-[130px] tracking-tight md:pl-8 pl-4 font-medium"
           >
             mına
           </h1>
         </div>
-        <h2 class="font-medium text-4xl pl-40 pt-16 max-w-3/4 tracking-tight">
+        <h2
+          class="font-medium text-2xl md:text-4xl md:pl-40 px-10 pt-16 max-w-3/4 tracking-tight"
+        >
           an <span class="text-[#C467F0] dark:text-[#D479FF]"
             >archıtectural desıgner</span
-          > strıvıng<br />
-          to create thoughtful
+          > strıvıng to create thoughtful
           <span class="text-[#7692F6] dark:text-[#6889FF]"
             >user experıences</span
           >
-          <br />to support people.
+          to support people.
         </h2>
-        <h6 class="text-3xl pl-40 tracking-tight pt-10">
+        <h6 class="text-2xl md:text-3xl md:pl-40 pl-10 tracking-tight pt-10">
           <em>(and have fun whıle doıng so!)</em>
         </h6>
       </div>
       <img
         src="/index/D-im-mina-photo.png"
         alt="photo of me"
-        class="-mr-96 p-10 rotate-[352deg] im-mina-photo block dark:hidden"
+        class="2xl:-mr-20 p-10 rotate-[352deg] im-mina-photo block dark:hidden max-w-lg xl:max-w-none"
       />
       <img
         src="/index/D-im-mina-photo.png"
         alt="photo of me"
-        class="-mr-96 p-10 rotate-[352deg] im-mina-photo hidden dark:block"
+        class="2xl:-mr-20 p-10 rotate-[352deg] im-mina-photo hidden dark:block max-w-lg xl:max-w-none"
       />
     </div>
 
     <div class="pt-36" id="work">
       <div class="flex flex-row">
-        <h6 class="text-5xl leading-[67px] pl-40">
+        <h6 class="text-3xl md:text-5xl md:leading-[77px] leading-[50px]">
           <em>my</em>
         </h6>
-        <h1 class="leading-[7px] text-[130px] tracking-tight pl-4 font-medium">
+        <h1
+          class="leading-[7px] text-[80px] md:text-[130px] tracking-tight md:pl-8 pl-4 font-medium"
+        >
           work
         </h1>
       </div>
@@ -57,26 +62,26 @@ import MySiteLayout from "../layouts/default.astro";
 
     <a href="/projects/nutrie">
       <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-10 h-[70vh] w-full flex flex-row relative group drop-shadow-md"
+        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-10 h-[90vh] md:h-[70vh] w-full flex flex-row relative group drop-shadow-md"
       >
         <div
-          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-40 flex justify-center items-center"
+          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full md:group-hover:w-2/3 transition-all duration-700 z-40 flex justify-center items-center"
         >
           <img
             src="/index/L-Nutrie-reg-logo.svg"
-            class="block group-hover:hidden dark:hidden"
+            class="hidden md:block group-hover:hidden dark:hidden"
           />
           <img
             src="/index/D-Nutrie-reg-logo.svg"
-            class="hidden dark:block group-hover:hidden"
+            class="hidden md:dark:block group-hover:hidden"
           />
           <img
             src="/index/L-Nutrie-shiny-logo.svg"
-            class="hidden group-hover:block"
+            class="block md:hidden md:group-hover:block"
           />
         </div>
         <div
-          class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+          class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] md:h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center px-8 md:pl-20"
         >
           <h2 class="font-medium text-4xl tracking-normal align-center">
             nutrıe
@@ -98,23 +103,23 @@ import MySiteLayout from "../layouts/default.astro";
         class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-24 h-[70vh] w-full flex flex-row relative group drop-shadow-md"
       >
         <div
-          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-30 flex justify-center items-center"
+          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full md:group-hover:w-2/3 transition-all duration-700 z-30 flex justify-center items-center"
         >
           <img
             src="/index/L-PlantPlace-reg-logo.svg"
-            class="block group-hover:hidden dark:hidden"
-          />
-          <img
-            src="/index/L-PlantPlace-shiny-logo.svg"
-            class="hidden group-hover:block"
+            class="hidden md:block group-hover:hidden dark:hidden"
           />
           <img
             src="/index/D-PlantPlace-reg-logo.svg"
-            class="hidden group-hover:hidden dark:block"
+            class="hidden md:dark:block group-hover:hidden"
+          />
+          <img
+            src="/index/L-PlantPlace-shiny-logo.svg"
+            class="block md:hidden md:group-hover:block"
           />
         </div>
         <div
-          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full z-40 bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] md:h-[120px] w-full z-40 bg-opacity-50 absolute bottom-0 flex flex-col justify-center px-8 md:pl-20"
         >
           <h2 class="font-medium text-4xl tracking-normals align-center">
             plantplace
@@ -136,23 +141,23 @@ import MySiteLayout from "../layouts/default.astro";
         class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row relative group drop-shadow-md"
       >
         <div
-          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full group-hover:w-2/3 transition-all duration-700 z-30 flex justify-center items-center"
+          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full md:group-hover:w-2/3 transition-all duration-700 z-30 flex justify-center items-center"
         >
           <img
             src="/index/L-Arch-reg-logo.svg"
-            class="block group-hover:hidden dark:hidden"
-          />
-          <img
-            src="/index/L-Arch-shiny-logo.svg"
-            class="hidden group-hover:block"
+            class="hidden md:block group-hover:hidden dark:hidden"
           />
           <img
             src="/index/D-Arch-reg-logo.svg"
-            class="hidden group-hover:hidden dark:block"
+            class="hidden md:dark:block group-hover:hidden"
+          />
+          <img
+            src="/index/L-Arch-shiny-logo.svg"
+            class="block md:hidden md:group-hover:block"
           />
         </div>
         <div
-          class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+          class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[200px] md:h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center px-8 md:pl-20"
         >
           <h2 class="font-medium text-4xl tracking-normal align-center">
             experıencıng archıtecture
@@ -171,10 +176,12 @@ import MySiteLayout from "../layouts/default.astro";
 
     <div class="pt-36" id="extras">
       <div class="flex flex-row">
-        <h6 class="leading-[67px] text-5xl pl-40">
+        <h6 class="md:leading-[77px] leading-[50px] md:text-5xl text-3xl">
           <em>the</em>
         </h6>
-        <h1 class="leading-[7px] text-[130px] tracking-tight pl-4 font-medium">
+        <h1
+          class="leading-[7px] text-[80px] md:text-[130px] tracking-tight md:pl-8 pl-4 font-medium"
+        >
           extras
         </h1>
       </div>
@@ -189,113 +196,123 @@ import MySiteLayout from "../layouts/default.astro";
           A look into some of my favorite music artists.
         </p>
       </div>
-      <div class="flex flex-col px-24 gap-20 pt-20 justify-between">
-        <div class="flex flex-row justify-around gap-24">
-          <a
-            href="https://open.spotify.com/artist/6xdRb2GypJ7DqnWAI2mHGn"
-            target="_blank"
-            ><div>
-              <img
-                src="/posters/MUNA.png"
-                class="flex-shrink hover:scale-110 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          </a>
-          <a
-            href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
-            target="_blank"
-          >
+      <div class="overflow-auto md:overflow-visible">
+        <div
+          class="flex flex-row md:flex-col md:px-24 md:gap-20 md:pt-20 md:justify-between"
+        >
+          <div class="flex flex-row justify-around md:gap-24">
+            <a
+              href="https://open.spotify.com/artist/6xdRb2GypJ7DqnWAI2mHGn"
+              target="_blank"
+              ><div>
+                <img
+                  src="/posters/MUNA.png"
+                  class="min-w-[200px] hover:scale-110 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/7DjwIxbe8kpw4pqnzAMoin"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="/posters/beths.png"
+                  class="min-w-[200px] hover:scale-110 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="/posters/Beach-House.png"
+                  class="min-w-[200px] hover:scale-110 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-row justify-around md:gap-24">
+            <a
+              href="https://open.spotify.com/artist/3kzwYV3OCB010YfXMF0Avt"
+              target="_blank"
+              ><div>
+                <img
+                  src="/posters/Alvvays.png"
+                  class="min-w-[200px] hover:scale-110 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/3kzwYV3OCB010YfXMF0Avt"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="/posters/alvvays-2.png"
+                  class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="/posters/solar-power.png"
+                  class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-row justify-around md:gap-24">
+            <a
+              href="https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5"
+              target="_blank"
+              ><div>
+                <img
+                  src="/posters/charli.png"
+                  class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/5QdyldG4Fl4TPiOIeMNpBZ"
+              target="_blank"
+            >
+              <div>
+                <img
+                  src="/posters/BigThief.png"
+                  class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
+                />
+              </div>
+            </a>
             <div>
-              <img
-                src="/posters/beths.png"
-                class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
-              />
+              <img src="/posters/solar-power.png" class="h-auto opacity-0" />
             </div>
-          </a>
-          <a
-            href="https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
-            target="_blank"
-          >
-            <div>
-              <img
-                src="/posters/Beach-House.png"
-                class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          </a>
-        </div>
-        <div class="w-full flex flex-row justify-around gap-24">
-          <a
-            href="https://open.spotify.com/artist/3kzwYV3OCB010YfXMF0Avt"
-            target="_blank"
-            ><div>
-              <img
-                src="/posters/Alvvays.png"
-                class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          </a>
-          <a
-            href="https://open.spotify.com/artist/3kzwYV3OCB010YfXMF0Avt"
-            target="_blank"
-          >
-            <div>
-              <img
-                src="/posters/alvvays-2.png"
-                class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          </a>
-          <a
-            href="https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
-            target="_blank"
-          >
-            <div>
-              <img
-                src="/posters/solar-power.png"
-                class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          </a>
-        </div>
-        <div class="w-full flex flex-row justify-around gap-24">
-          <a
-            href="https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5"
-            target="_blank"
-            ><div>
-              <img
-                src="/posters/charli.png"
-                class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          </a>
-          <a
-            href="https://open.spotify.com/artist/5QdyldG4Fl4TPiOIeMNpBZ"
-            target="_blank"
-          >
-            <div>
-              <img
-                src="/posters/BigThief.png"
-                class="h-auto hover:scale-110 transition-all duration-500 ease-in-out"
-              />
-            </div>
-          </a>
-          <div>
-            <img src="/posters/solar-power.png" class="h-auto opacity-0" />
           </div>
         </div>
       </div>
     </div>
 
     <div
-      class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[80vh] mt-32 w-full flex flex-row align-center drop-shadow-md"
+      class="dark:bg-[#3e3f45] bg-[#ECEEF4] pl-10 h-[80vh] mt-32 w-full flex flex-row align-center drop-shadow-md"
     >
-      <div class="flex-col flex justify-center pl-40 pt-16" id="about-me">
+      <div class="flex-col flex justify-center pl-10 pt-16" id="about-me">
         <div class="justify-center">
-          <div class="flex flex-row">
-            <h1 class="font-medium leading-[7px] text-[130px] tracking-tight">
+          <div class="flex flex-row pt-5">
+            <h1
+              class="font-medium leading-[7px] text-[80px] md:text-[130px] tracking-tight"
+            >
               about
-            </h1><h6 class="leading-[67px] text-5xl pl-8"><em>me</em></h6>
+            </h1><h6
+              class="md:leading-[77px] leading-[50px] text-3xl md:text-5xl md:pl-8 pl-4"
+            >
+              <em>me</em>
+            </h6>
           </div>
         </div>
         <p class="pt-20 w-full tracking-wide">
@@ -337,6 +354,10 @@ import MySiteLayout from "../layouts/default.astro";
 
   .im-mina-photo {
     filter: none;
+
+    @media (max-width: 768px) {
+      content: url("/index/im-mina-photo-outline.png");
+    }
   }
 
   .im-mina-photo:hover {
@@ -345,6 +366,10 @@ import MySiteLayout from "../layouts/default.astro";
 
   .join-me-photo {
     filter: none;
+
+    @media (max-width: 768px) {
+      content: url("/index/join-me-photo-outline.png");
+    }
   }
 
   .join-me-photo:hover {
@@ -353,6 +378,10 @@ import MySiteLayout from "../layouts/default.astro";
 
   .plantplace-logo {
     filter: none;
+
+    @media (max-width: 768px) {
+      content: url("/index/L-PlantPlace-shiny-logo.svg");
+    }
   }
 
   .plantplace-logo:hover {
@@ -361,6 +390,10 @@ import MySiteLayout from "../layouts/default.astro";
 
   .arch-logo {
     filter: none;
+
+    @media (max-width: 768px) {
+      content: url("/index/L-Arch-shiny-logo.svg");
+    }
   }
 
   .arch-logo:hover {

@@ -50,7 +50,9 @@ const { backgroundVisible } = Astro.props;
   <body class="dark:bg-[#3a3a3a] bg-[#f4f4f4] dark:text-white text-[#3A3A3A]">
     <!-- <img class="fixed icons pt-8" src="/L-dark-light-mode.png" alt="dark and light mode icons"> -->
 
-    <nav class="fixed top-0 flex w-full flex-row justify-between p-10 z-50">
+    <nav
+      class="fixed top-0 hidden md:flex w-full flex-row justify-between p-10 z-50"
+    >
       <div class="flex flex-row gap-12">
         <a href="/">
           <h1 class="text-xl hover:text-[#939393] font-light">
