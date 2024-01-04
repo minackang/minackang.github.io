@@ -1,91 +1,75 @@
 ---
 import MySiteLayout from "../layouts/default.astro";
-
 ---
 
-<MySiteLayout>
-    <div class="flex flex-row">
-    <article class="pt-8 tracking-wider flex flex-col">
-        <div class="pl-64 pt-64">
-        <h1 class="text-[4rem] font-semibold">about me</h1>
-</div>
-
-        <article class="pl-64 pt-10 max-w-4xl tracking-wide flex flex-row">
-            <div><p>Welcome to my website. 
-             I’m an aspiring UX designer with a background in architectural design.
-            </p>
-            <br/>
-            <p>I graduated from Virginia Tech in 2020 with a Bachelor of Architecture and have since been working at a global engineering/architecture firm.  
-    After being introduced to Figma in late 2022, I quickly gained interest in web and mobile app design.  
-    I was already familiar with the iterative process of design, but the continuous testing and turnaround of user experience design was faster-paced and more appealing.  
-    I gravitated towards the nearly immediate and direct nature of incorporating user feedback.
-            </p>
-            <br/>
-            <p>On this site you’ll find one of my personal architectural design projects as well as ongoing personal UX projects.  
-    Join me as I continue to explore our world of user experiences.
-            </p>
-        </div>
-        </article>
-        
+<MySiteLayout showBackToTop={false}>
+  <div
+    class="dark:bg-[#3e3f45] bg-[#E2E6F2] 2xl:pl-56 md:pl-24 sm:pl-16 pl-10 lg:h-[100vh] w-full flex flex-col lg:flex-row justify-center items-start lg:items-center drop-shadow-md"
+  >
+    <section class="flex-col flex justify-center pt-16 sm:pt-36" id="about-me">
+      <div class="justify-center">
         <div class="flex flex-row">
-        <div class="pl-44 pt-28 resume">
-            <img src="/L-resume.png" alt="see resume">
-        </div> 
-        <div class="pl-44 pt-28 contact">
-            <img src="/L-contact.png" alt="contact me">
-        </div> 
-    </div>
-    </article>
-    <div class="photo pt-36 pl-44">
-        <img src="/photos2.png" alt="photos of me">
-    </div> 
-</div>
-
-<!-- <div class="chicago pr-6">
-    <img src= "/chicago.png"
-alt= "me in chicago"></div>
-<div class="donut right-0">
-    <img src= "/donut.png"
-alt= "me with a donut"></div>
-<div class="cherryblossom right-0 pl-6 ">
-    <img src= "/cherryblossom.png"
-alt= "cherry blossom tree"></div>
-</div> -->
-
-
-</div>
-
+          <h1
+            class="text-[#FF424E] dark:text-[#FF8991] font-normal text-[50px] tracking-tight"
+          >
+            about
+          </h1>
+        </div>
+      </div>
+      <p class="pt-10 w-2/3 tracking-wide">
+        Welcome to my website! I am an aspiring UX designer with a background in
+        architectural design.<br />
+        <br />
+        I graduated from Virginia Tech in 2020 with a Bachelor of Architecture and
+        worked at a global engineering/architecture firm from 2020-2023. After being
+        introduced to Figma in late 2022, I quickly gained interest in web and mobile
+        app design. I was already familiar with the iterative process of design in
+        architecture, but I found the continuous testing and turnaround to be quicker
+        with user experience design in the digital world. I gravitated towards the
+        immediate and direct nature of incorporating user feedback.<br />
+        <br />
+        On this site (I learned to code myself :-)) you'll find ongoing personal
+        UX/UI projects and one of my undergraduate architecture projects. Feel free
+        to reach out if you would like to hear more about my work. I would also be
+        happy to provide my complete architecture portfolio with professional projects,
+        if interested. Thank you for stopping by!
+      </p>
+    </section>
+    <img
+      src="/index/mina-bridge.png"
+      alt="photo of me"
+      class="justify-center lg:object-contain w-1/2 mt-[108px]"
+    />
+  </div>
 </MySiteLayout>
 
 <style>
-
-.photo {
+  .photo {
     max-width: 36%;
     max-height: auto;
-}
-
-.table {
-    max-width: 20%;
-    max-height: auto;
-}
-
-.cherryblossom {
-    max-width: 16%;
-    max-height: auto;
-}
-
-.resume {
-    width: 400px;
-    height: auto;
-}
-
-.contact {
-    width: 383px;
-    height: auto;
-}
-
-.resume:hover {
-    content:url("L-resume-hover.png");
   }
 
+  .table {
+    max-width: 20%;
+    max-height: auto;
+  }
+
+  .cherryblossom {
+    max-width: 16%;
+    max-height: auto;
+  }
+
+  .resume {
+    width: 400px;
+    height: auto;
+  }
+
+  .contact {
+    width: 383px;
+    height: auto;
+  }
+
+  .resume:hover {
+    content: url("L-resume-hover.png");
+  }
 </style>

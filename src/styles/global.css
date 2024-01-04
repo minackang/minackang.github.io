@@ -3,6 +3,9 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+section {
+    scroll-margin-top: 108px;
+}
 
 h2 {
 	font-family: 'Archivo', sans-serif;
@@ -13,15 +16,16 @@ body {
         font-family: "Archivo", sans-serif;
     }
 
-h3, h1 {
-        font-weight:bold;
+h1, h3, h6 {
         font-family: "Alexandria", sans-serif;
+        font-weight: 400;
     }
 
-h4, h6 {
-	font-family: "Alexandria", sans-serif;
-	font-weight:400;
-}
+h4 {
+        font-family: "Alexandria", sans-serif;
+        font-weight: 300;
+    }
+
 h5 {
 	font-family: "Archivo", sans-serif;
 	font-weight: 500;

@@ -1,8 +1,9 @@
 ---
+import ScrollArrow from "../../components/ScrollArrow.astro";
 import MySiteLayout from "../../layouts/default.astro";
 ---
 
-<MySiteLayout>
+<MySiteLayout showBackToTop={true}>
   <div class="w-full">
     <img
       src="/arch/arch-cover-corridor.png"
@@ -18,19 +19,21 @@ import MySiteLayout from "../../layouts/default.astro";
     />
 
     <div
-      class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+      class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[140px] sm:h-[160px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center text-center"
     >
-      <h1 class="text-[4rem] font-semibold">experıencıng archıtecture</h1>
-      <h2 class="text-[2.25rem] tracking-wide font-extralight leading-6 pb-6">
+      <h1 class="sm:pl-4 sm:text-[40px] text-[30px] font-semibold">
+        experiencing architecture
+      </h1>
+      <h2 class="sm:text-[30px] text-[20px] tracking-wide font-light">
         Virginia Tech, 2020; Bachelor of Architecture Thesis - Designing a
         preschool
       </h2>
     </div>
   </div>
 
-  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
-    <article class="max-w-2xl mx-auto pt-8 tracking-wider">
-      <h3 class="text-[2.25rem] pt-20 pb-10">tl;dr</h3>
+  <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
+    <article class="sm:max-w-3xl px-4 mx-auto pt-8 tracking-wider">
+      <h1 class="text-[30px] font-semibold pt-20 pb-10">tl;dr</h1>
       <p>
         For my undergraduate thesis, I explored a hypothetical sequence of
         spaces in a preschool, their functions, and their effects on children. I
@@ -45,7 +48,7 @@ import MySiteLayout from "../../layouts/default.astro";
       develop a more user-centric, data-driven design:
       <br />
       <br />
-      <ul class="list-disc pl-5">
+      <ul class="list-disc pl-5 pb-10">
         <li>
           Identify the problem with the current layout by determining who the
           primary and secondary users of the preschool are.
@@ -62,20 +65,21 @@ import MySiteLayout from "../../layouts/default.astro";
         </li>
       </ul>
 
-      <a href="#redesign"
-        ><h3
+      <a href="#redesign">
+        <ScrollArrow text="see redesign process" />
+        <!-- <h3
           class="inline-block font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] dark:hover:text-[#A2B6FF] text-[#7692F6]"
         >
-          see redesıgn process
-        </h3>
+          see redesign process
+        </h3> -->
       </a>
     </article>
   </div>
-  <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
-    <article class="max-w-2xl mx-auto pt-16 bodyfont tracking-wider">
+  <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
+    <article class="sm:max-w-3xl px-4 mx-auto pt-16 bodyfont tracking-wider">
       <p>My original thesis was focused on a more conceptual design:</p>
       <br />
-      <ul class="list-disc pl-5">
+      <ul class="list-disc pl-5 pb-10">
         <li>
           Overlapping geometries revealed the connecting of spaces and the use
           of transitional spaces.
@@ -90,19 +94,17 @@ import MySiteLayout from "../../layouts/default.astro";
         </li>
       </ul>
 
-      <a href="#original"
-        ><h3
-          class="font-medium text-[2.25rem] pt-10 pb-10 h3font dark:hover:text-[#A2B6FF] hover:text-[#2E5CFF] text-[#7692F6] inline-block"
-        >
-          see orıgınal desıgn
-        </h3>
+      <a href="#original">
+        <ScrollArrow text="see original design" />
       </a>
     </article>
   </div>
-  <div id="redesign" class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
-    <article class="max-w-2xl mx-auto pt-8 tracking-wider">
-      <h3 class="text-[2.25rem] pt-16 pb-10">the redesıgn process</h3>
-      <h4 class="text-[1.5rem] pb-5 font-medium">identifying the problem</h4>
+  <section id="redesign" class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
+    <article class="max-w-3xl px-4 mx-auto pt-8 tracking-wider">
+      <h1 class="text-[30px] font-semibold pt-16 pb-10">
+        the redesign process
+      </h1>
+      <h1 class="text-[25px] font-light pb-5">identifying the problem</h1>
       <p class="pb-10">
         The people who interact inside a preschool include more than just the
         children: their guardians and teachers. Out of these users, some will be
@@ -112,7 +114,7 @@ import MySiteLayout from "../../layouts/default.astro";
         what correlation the spaces have with children’s behavior, it is
         essential to hear from the people who spend time in those spaces.
       </p>
-      <h4 class="text-[1.5rem] pb-7 font-medium">gathering information</h4>
+      <h1 class="text-[25px] pb-7 font-light">gathering information</h1>
       <h5 class="font-bold pb-5">Teachers:</h5>
       <p class="pb-5">
         I would collect information from the teachers first for a couple
@@ -193,33 +195,33 @@ import MySiteLayout from "../../layouts/default.astro";
         corridors should be designed.
       </p>
     </article>
-  </div>
-  <div id="original" class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
-    <article class="max-w-2xl mx-auto pt-16 tracking-wider">
-      <h3 class="text-[2.25rem] pt-6 pb-10">the orıgınal desıgn</h3>
-      <h4 class="text-[1.5rem] pb-5 font-medium">iterating with form</h4>
+  </section>
+  <section id="original" class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
+    <article class="max-w-3xl px-4 mx-auto pt-16 tracking-wider">
+      <h1 class="text-[30px] font-semibold pt-6 pb-10">the original design</h1>
+      <h1 class="text-[25px] font-light pb-5">iterating with form</h1>
       <p class="pb-20">
         Overlapping geometries created intermediary spaces. These spaces would
         serve as areas of transition from “social” to “individual”, and
         connection of each classroom to another.
       </p>
+      <div class="pb-20">
+        <img
+          src="/arch/Arch-geometric-forms.png"
+          alt="various geometric layouts"
+        />
+      </div>
+      <div class="pb-20">
+        <img
+          src="/arch/Arch-inside-outside.png"
+          alt="graphic showing inside, outside, and in-between spaces"
+        />
+      </div>
     </article>
-    <div class="geometric pb-20">
-      <img
-        src="/arch/Arch-geometric-forms.png"
-        alt="various geometric layouts"
-      />
-    </div>
-    <div class="geometric pb-20">
-      <img
-        src="/arch/Arch-inside-outside.png"
-        alt="graphic showing inside, outside, and in-between spaces"
-      />
-    </div>
-  </div>
-  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
-    <article class="max-w-2xl mx-auto pt-16 tracking-wider">
-      <h4 class="text-[1.5rem] pb-5 font-medium">following a sequence</h4>
+  </section>
+  <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
+    <article class="max-w-3xl px-4 mx-auto pt-16 tracking-wider">
+      <h1 class="text-[25px] font-light pb-5">following a sequence</h1>
       <p class="pb-20">
         The sequence through the classroom starts with a nook outside the
         classroom that serves as a small buffer, then the cubbies at the
@@ -227,50 +229,51 @@ import MySiteLayout from "../../layouts/default.astro";
         individuality, and then the play/class area, split into a more
         individual space and a group space.
       </p>
+      <div class="pb-20">
+        <img
+          src="/arch/L-Arch-classroom-sequence.png"
+          alt="drawing showing classroom spaces"
+          class="block dark:hidden"
+        />
+        <img
+          src="/arch/D-Arch-classroom-sequence.png"
+          alt="drawing showing classroom spaces"
+          class="hidden dark:block"
+        />
+      </div>
     </article>
-    <div class="pb-20 classroom">
-      <img
-        src="/arch/L-Arch-classroom-sequence.png"
-        alt="drawing showing classroom spaces"
-        class="block dark:hidden"
-      />
-      <img
-        src="/arch/D-Arch-classroom-sequence.png"
-        alt="drawing showing classroom spaces"
-        class="hidden dark:block"
-      />
-    </div>
   </div>
-  <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
-    <article class="max-w-2xl mx-auto pt-16 tracking-wider">
-      <h4 class="text-[1.5rem] pb-5 font-medium">
+  <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
+    <article class="max-w-3xl px-4 mx-auto pt-16 tracking-wider">
+      <h1 class="text-[25px] font-light pb-5">
         scale of public vs. private space
-      </h4>
+      </h1>
       <p class="pb-10">
         The varying heights of the spaces indicate the type of space: private
         spaces are enclosed while public spaces are expansive.
       </p>
+      <div class="pb-20">
+        <img
+          src="/arch/L-Arch-public-private.png"
+          alt="drawings of classroom"
+          class="block dark:hidden"
+        />
+        <img
+          src="/arch/D-Arch-public-private.png"
+          alt="drawings of classroom"
+          class="hidden dark:block"
+        />
+      </div>
     </article>
-    <div class="publicprivate pb-20">
-      <img
-        src="/arch/L-Arch-public-private.png"
-        alt="drawings of classroom"
-        class="block dark:hidden"
-      />
-      <img
-        src="/arch/D-Arch-public-private.png"
-        alt="drawings of classroom"
-        class="hidden dark:block"
-      />
-    </div>
-    <article class="max-w-2xl mx-auto tracking-wider">
+
+    <article class="max-w-3xl px-4 mx-auto tracking-wider">
       <p class="pb-10">
         Similarly, at the entrance of the school, the spaces gradually become
         taller to suggest a more public space, from the entrance vestibule, to
         the reception area, to the circulation core.
       </p>
 
-      <div class="axon pb-20">
+      <div class="pb-20">
         <img
           src="/arch/L-Arch-circulation-core.png"
           alt="axonometric drawing of building vestibule"
@@ -285,16 +288,17 @@ import MySiteLayout from "../../layouts/default.astro";
       <a
         href="https://drive.google.com/file/d/1f6fYpVDI8uYkqWnkonRBsRkaODNgJfEe/view?usp=drive_link"
         target="_blank"
+        class="items-center text-center"
         ><h3
-          class="font-medium text-[2.25rem] pt-10 pb-10 h3font hover:text-[#2E5CFF] dark:hover:text-[#A2B6FF] text-[#7692F6] inline-block"
+          class="font-medium text-[2.25rem] pt-10 pb-10 hover:text-[#FF424E] dark:hover:text-[#FF8991] text-[#000000] dark:text-[#ffffff]"
         >
-          full thesıs documentatıon
+          full thesis documentation
         </h3>
       </a>
     </article>
   </div>
 </MySiteLayout>
-<div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
+<!-- <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
   <div class="max-w-2xl mx-auto">
     <a href="/#extras"
       ><div>
@@ -306,7 +310,7 @@ import MySiteLayout from "../../layouts/default.astro";
       </div>
     </a>
   </div>
-</div>
+</div> -->
 
 <style>
   .list {

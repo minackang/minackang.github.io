@@ -1,8 +1,9 @@
 ---
+import ScrollArrow from "../../components/ScrollArrow.astro";
 import MySiteLayout from "../../layouts/default.astro";
 ---
 
-<MySiteLayout>
+<MySiteLayout showBackToTop={true}>
   <div class="w-full">
     <img
       src="/plant/L-PlantPlace-page-static-image.png"
@@ -17,20 +18,24 @@ import MySiteLayout from "../../layouts/default.astro";
       class="opacity-0"
     />
     <div
-      class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center pl-20"
+      class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[100px] sm:h-[160px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center text-center"
     >
-      <h1 class="text-[4rem] font-semibold">plantplace</h1>
-      <h2 class="text-[2.25rem] tracking-wide font-extralight leading-6 pb-6">
+      <h1 class="sm:pl-4 text-[30px] sm:text-[40px] font-semibold">
+        plantplace
+      </h1>
+      <h2 class="text-[20px] sm:text-[30px] tracking-wide font-light">
         a mobile app to buy and sell plants
       </h2>
     </div>
   </div>
 
-  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
-    <article class="max-w-3xl mx-auto pt-8 tracking-wider flex flex-col">
-      <h3 class="text-[2.25rem] pt-20 pb-10">tl;dr</h3>
+  <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
+    <article
+      class="sm:max-w-3xl px-4 mx-auto pt-8 tracking-wider flex flex-col"
+    >
+      <h1 class="text-[30px] font-semibold pt-20 pb-10">tl;dr</h1>
       <p>
-        The problem with most marketplace apps and sites is that there aren’t
+        The problem with most marketplace apps and sites is that there aren't
         enough options for specificity. After browsing through eBay, Facebook
         Marketplace, and Etsy, the search functions were not catered towards
         plants, making it difficult to find any particular plant.
@@ -62,9 +67,9 @@ import MySiteLayout from "../../layouts/default.astro";
         allowfullscreen></iframe>
     </div>
   </div>
-  <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
-    <article class="max-w-3xl mx-auto tracking-wider">
-      <h3 class="text-[2.25rem] pt-16 pb-10">the ıteratıons</h3>
+  <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
+    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
+      <h1 class="text-[30px] font-semibold pt-16 pb-10">the iterations</h1>
       <h4 class="text-[1.5rem] pb-5 tracking-normal">
         hierarchy of information
       </h4>
@@ -77,16 +82,16 @@ import MySiteLayout from "../../layouts/default.astro";
         cluster. The rest of the information is separated with tabs in order to
         not overcrowd the page with text.
       </p>
+      <div class="pb-20">
+        <img
+          src="/plant/L-PlantPlace-frame-a-b.png"
+          alt="screens showing comparison between two iterations"
+        />
+      </div>
     </article>
-    <div class="frameab pb-20">
-      <img
-        src="/plant/L-PlantPlace-frame-a-b.png"
-        alt="screens showing comparison between two iterations"
-      />
-    </div>
   </div>
-  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
-    <article class="max-w-3xl mx-auto tracking-wider">
+  <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
+    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
       <h4 class="text-[1.5rem] pb-5 tracking-normal pt-16">
         style consistency
       </h4>
@@ -96,17 +101,17 @@ import MySiteLayout from "../../layouts/default.astro";
         seem uncoordinated. Staying consistent with styles gives a much cleaner,
         cohesive look.
       </p>
+      <div class="pb-20">
+        <img
+          src="/plant/L-PlantPlace-frame-c-d.png"
+          alt="screens showing comparison between two iterations"
+        />
+      </div>
     </article>
-    <div class="frameab pb-20">
-      <img
-        src="/plant/L-PlantPlace-frame-c-d.png"
-        alt="screens showing comparison between two iterations"
-      />
-    </div>
   </div>
 
-  <div class="bg-[#ECEEF4] dark:bg-[#3e3f45]">
-    <article class="max-w-3xl mx-auto tracking-wider">
+  <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
+    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
       <h4 class="text-[1.5rem] pb-5 pt-16 tracking-normal">
         simplification of color palette
       </h4>
@@ -115,17 +120,17 @@ import MySiteLayout from "../../layouts/default.astro";
         the multiple hues. I decided to stick with a single hue and balance it
         with neutrals such as black and white.
       </p>
+      <div class="pb-20">
+        <img
+          src="/plant/L-PlantPlace-frame-e-f.png"
+          alt="screens showing comparison between two iterations"
+        />
+      </div>
     </article>
-    <div class="frameab pb-20">
-      <img
-        src="/plant/L-PlantPlace-frame-e-f.png"
-        alt="screens showing comparison between two iterations"
-      />
-    </div>
   </div>
 
-  <div class="w-full relative dark:bg-[#3a3a3a] bg-[#f4f4f4]">
-    <article class="max-w-3xl mx-auto tracking-wider">
+  <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
+    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
       <h4 class="text-[1.5rem] pb-5 pt-16 tracking-normal">
         consolidation for better viewability
       </h4>
@@ -134,29 +139,23 @@ import MySiteLayout from "../../layouts/default.astro";
         filtering options, a tap to expand function allows the user to make
         multiple selections for different criteria with ease.
       </p>
+      <div class="pb-40">
+        <img
+          src="/plant/L-PlantPlace-frame-g-h.png"
+          alt="screens showing comparison between two iterations"
+        />
+      </div>
     </article>
-    <div class="framegh pb-40">
-      <img
-        src="/plant/L-PlantPlace-frame-g-h.png"
-        alt="screens showing comparison between two iterations"
-      />
-    </div>
+
     <div class="max-w-3xl mx-auto">
       <a href="/projects/arch"
-        ><div class="pl-10">
-          <h3
-            class="font-medium text-[2.25rem] pt-10 pb-20 h3font hover:text-[#2E5CFF] text-[#7692F6]"
-          >
-            next: preschool archıtecture
-          </h3>
-        </div>
+        ><ScrollArrow text="next: preschool architecture" horizontal />
       </a>
     </div>
   </div>
-</MySiteLayout>
 
-<style>
-  /* .welcome {
+  <style>
+    /* .welcome {
     max-width: 20%;
     max-height: auto;
     display: block;
@@ -164,19 +163,20 @@ import MySiteLayout from "../../layouts/default.astro";
     margin-right: auto;
   } */
 
-  .frameab {
-    max-width: 40%;
-    max-height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .frameab {
+      max-width: 40%;
+      max-height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  .framegh {
-    max-width: 58%;
-    max-height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
+    .framegh {
+      max-width: 58%;
+      max-height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</MySiteLayout>

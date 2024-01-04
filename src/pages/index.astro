@@ -2,194 +2,146 @@
 import MySiteLayout from "../layouts/default.astro";
 ---
 
-<MySiteLayout>
-  <div class="w-3/4 container mx-auto">
+<MySiteLayout showBackToTop={true}>
+  <div class="w-full">
     <div
-      class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-[70vh] md:pb-0 pb-10 mt-52 w-full flex flex-col-reverse xl:flex-row align-center drop-shadow-md"
+      class="dark:bg-[#2B2C36] bg-[#E2E6F2] h-[90vh] xl:pb-0 pb-10 w-full flex flex-col justify-center align-center drop-shadow-md"
     >
-      <div class="flex flex-col justify-center">
-        <div class="flex flex-row">
-          <h6
-            class="text-3xl md:text-5xl md:leading-[77px] leading-[50px] md:pl-40 pl-10"
-          >
-            <em>ı'm</em>
-          </h6>
-          <h1
-            class="leading-[7px] text-[80px] md:text-[130px] tracking-tight md:pl-8 pl-4 font-medium"
-          >
-            mına
-          </h1>
-        </div>
-        <h2
-          class="font-medium text-2xl md:text-4xl md:pl-40 px-10 pt-16 max-w-3/4 tracking-tight"
-        >
-          an <span class="text-[#C467F0] dark:text-[#D479FF]"
-            >archıtectural desıgner</span
-          > strıvıng to create thoughtful
-          <span class="text-[#7692F6] dark:text-[#6889FF]"
-            >user experıences</span
-          >
-          to support people.
-        </h2>
-        <h6 class="text-2xl md:text-3xl md:pl-40 pl-10 tracking-tight pt-10">
-          <em>(and have fun whıle doıng so!)</em>
-        </h6>
+      <h1
+        class="pt-20 text-[30px] xl:text-[40px] tracking-tight text-[#FF424E] dark:text-[#FF8991] text-center font-normal"
+      >
+        hello, my name is Mina !
+      </h1>
+
+      <div class="pt-4 flex flex-row justify-center gap-10">
+        <img
+          src="/index/waving-hand.svg"
+          class="w-[70px] h-[70px] pt-1 block dark:hidden"
+        />
+        <img
+          src="/index/dark-waving-hand.svg"
+          class="w-[70px] h-[70px] pt-1 hidden dark:block"
+        />
+        <img
+          src="/index/magic-wand.svg"
+          class="w-16 h-16 pt-2 block dark:hidden"
+        />
+        <img
+          src="/index/dark-magic-wand.svg"
+          class="w-16 h-16 pt-2 hidden dark:block"
+        />
+        <img
+          src="/index/coffee-cup.svg"
+          class="w-[70px] h-[70px] pb-1 block dark:hidden"
+        />
+        <img
+          src="/index/dark-coffee-cup.svg"
+          class="w-[70px] h-[70px] pb-1 hidden dark:block"
+        />
       </div>
-      <img
-        src="/index/D-im-mina-photo.png"
-        alt="photo of me"
-        class="2xl:-mr-20 p-10 rotate-[352deg] im-mina-photo block dark:hidden max-w-lg xl:max-w-none"
-      />
-      <img
-        src="/index/D-im-mina-photo.png"
-        alt="photo of me"
-        class="2xl:-mr-20 p-10 rotate-[352deg] im-mina-photo hidden dark:block max-w-lg xl:max-w-none"
-      />
+      <h4
+        class="text-[18px] tracking-tight text-[#FF424E] dark:text-[#FF8991] text-center pt-8"
+      >
+        designer and barista based in Brooklyn, NY.
+      </h4>
     </div>
 
-    <div class="pt-36" id="work">
-      <div class="flex flex-row">
-        <h6 class="text-3xl md:text-5xl md:leading-[77px] leading-[50px]">
-          <em>my</em>
-        </h6>
-        <h1
-          class="leading-[7px] text-[80px] md:text-[130px] tracking-tight md:pl-8 pl-4 font-medium"
+    <section id="work">
+      <a href="/projects/nutrie">
+        <div
+          class="dark:bg-[#1e1e1e] bg-[#FFFFFF] h-[70vh] w-full flex flex-row relative group drop-shadow-md items-center"
         >
-          work
-        </h1>
-      </div>
-    </div>
+          <div
+            class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] md:h-[120px] w-full bg-opacity-80 flex flex-col justify-center text-center"
+          >
+            <div
+              class="text-[#000000] dark:text-[#FFFFFF] sm:group-hover:text-[#FF424E] sm:dark:group-hover:text-[#FF8991] sm:transition-all sm:transition-duration-[700]"
+            >
+              <h3 class="font-medium text-4xl tracking-normal align-center">
+                nutrie
+              </h3>
+              <p class="tracking-wide font-medium text-lg">
+                A mobile app for guided intuitive meal planning
+              </p>
+            </div>
+          </div>
+          <img
+            src="/nutrie/L-Nutrie-page-static-image-2.png"
+            alt="photo of nutrie phone screens"
+            class="absolute block dark:hidden h-full object-cover w-full sm:grayscale sm:group-hover:grayscale-0 sm:transition-all sm:transition-duration-[700]"
+          />
+          <img
+            src="/nutrie/D-Nutrie-page-static-image.png"
+            alt="photo of nutrie phone screens"
+            class="absolute hidden dark:block h-full object-cover w-full sm:grayscale sm:group-hover:grayscale-0 sm:transition-all sm:transition-duration-[700]"
+          />
+        </div>
+      </a>
 
-    <a href="/projects/nutrie">
-      <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-10 h-[90vh] md:h-[70vh] w-full flex flex-row relative group drop-shadow-md"
-      >
+      <a href="/projects/plantplace">
         <div
-          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full md:group-hover:w-2/3 transition-all duration-700 z-40 flex justify-center items-center"
+          class="dark:bg-[#1e1e1e] bg-[#FFFFFF] h-[70vh] w-full flex flex-row relative group drop-shadow-md"
         >
+          <div
+            class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] md:h-[120px] w-full z-40 bg-opacity-80 my-auto flex flex-col justify-center text-center"
+          >
+            <div
+              class="text-[#000000] dark:text-[#FFFFFF] sm:group-hover:text-[#FF424E] sm:dark:group-hover:text-[#FF8991] sm:transition-all sm:transition-duration-[700]"
+            >
+              <h3 class="font-medium text-4xl tracking-normal align-center">
+                plantplace
+              </h3>
+              <p class="tracking-wide font-medium text-lg">
+                A digital marketplace for plant enthusiasts
+              </p>
+            </div>
+          </div>
           <img
-            src="/index/L-Nutrie-reg-logo.svg"
-            class="hidden md:block group-hover:hidden dark:hidden"
+            src="/plant/L-PlantPlace-page-static-image-2.png"
+            alt="photo of plantplace phone screens"
+            class="block dark:hidden absolute h-full object-cover w-full sm:grayscale sm:group-hover:grayscale-0 sm:transition-all sm:transition-duration-[700]"
           />
           <img
-            src="/index/D-Nutrie-reg-logo.svg"
-            class="hidden md:dark:block group-hover:hidden"
-          />
-          <img
-            src="/index/L-Nutrie-shiny-logo.svg"
-            class="block md:hidden md:group-hover:block"
+            src="/plant/D-PlantPlace-static-image.png"
+            alt="photo of plantplace phone screens"
+            class="dark:block hidden absolute h-full object-cover w-full sm:grayscale sm:group-hover:grayscale-0 sm:transition-all sm:transition-duration-[700]"
           />
         </div>
-        <div
-          class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] md:h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center px-8 md:pl-20"
-        >
-          <h2 class="font-medium text-4xl tracking-normal align-center">
-            nutrıe
-          </h2>
-          <p class="tracking-wide font-medium text-lg">
-            A mobile app for guided intuitive meal planning
-          </p>
-        </div>
-        <img
-          src="/index/L-Nutrie-Index-Spread-color.png"
-          alt="photo of nutrie phone screens"
-          class="absolute h-full object-cover right-0 grayscale group-hover:grayscale-0"
-        />
-      </div>
-    </a>
+      </a>
 
-    <a href="/projects/plantplace">
-      <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-24 h-[70vh] w-full flex flex-row relative group drop-shadow-md"
-      >
+      <a href="/projects/arch">
         <div
-          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full md:group-hover:w-2/3 transition-all duration-700 z-30 flex justify-center items-center"
+          class="dark:bg-[#1e1e1e] bg-[#FFFFFF] h-[70vh] w-full flex flex-row relative group drop-shadow-md"
         >
+          <div
+            class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] md:h-[120px] w-full bg-opacity-80 flex flex-col justify-center my-auto text-center"
+          >
+            <div
+              class="text-[#000000] dark:text-[#FFFFFF] sm:group-hover:text-[#FF424E] sm:dark:group-hover:text-[#FF8991] sm:transition-all sm:transition-duration-[700]"
+            >
+              <h3 class="font-medium text-4xl tracking-normal align-center">
+                experiencing architecture
+              </h3>
+              <p class="tracking-wide font-medium text-lg">
+                B. Arch. Thesis - Designing a preschool
+              </p>
+            </div>
+          </div>
           <img
-            src="/index/L-PlantPlace-reg-logo.svg"
-            class="hidden md:block group-hover:hidden dark:hidden"
-          />
-          <img
-            src="/index/D-PlantPlace-reg-logo.svg"
-            class="hidden md:dark:block group-hover:hidden"
-          />
-          <img
-            src="/index/L-PlantPlace-shiny-logo.svg"
-            class="block md:hidden md:group-hover:block"
+            src="/index/exp-arch-image-2.png"
+            alt="architecture drawing"
+            class="absolute h-full object-cover w-full sm:grayscale sm:group-hover:grayscale-0 sm:transition-all sm:transition-duration-[700]"
           />
         </div>
-        <div
-          class="dark:bg-[#000000] dark:bg-opacity-50 bg-[#FFFFFF] h-[160px] md:h-[120px] w-full z-40 bg-opacity-50 absolute bottom-0 flex flex-col justify-center px-8 md:pl-20"
-        >
-          <h2 class="font-medium text-4xl tracking-normals align-center">
-            plantplace
-          </h2>
-          <p class="tracking-wide font-medium text-lg">
-            A digital marketplace for plant enthusiasts
-          </p>
-        </div>
-        <img
-          src="/index/L-PlantPlace-Index-Row-Color.png"
-          alt="photo of plantplace phone screens"
-          class="absolute h-full object-cover right-0 grayscale group-hover:grayscale-0"
-        />
-      </div>
-    </a>
-
-    <a href="/projects/arch">
-      <div
-        class="dark:bg-[#3e3f45] bg-[#ECEEF4] mt-16 h-[70vh] w-full flex flex-row relative group drop-shadow-md"
-      >
-        <div
-          class="dark:bg-[#3e3f45] bg-[#ECEEF4] h-full w-full md:group-hover:w-2/3 transition-all duration-700 z-30 flex justify-center items-center"
-        >
-          <img
-            src="/index/L-Arch-reg-logo.svg"
-            class="hidden md:block group-hover:hidden dark:hidden"
-          />
-          <img
-            src="/index/D-Arch-reg-logo.svg"
-            class="hidden md:dark:block group-hover:hidden"
-          />
-          <img
-            src="/index/L-Arch-shiny-logo.svg"
-            class="block md:hidden md:group-hover:block"
-          />
-        </div>
-        <div
-          class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[200px] md:h-[120px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center px-8 md:pl-20"
-        >
-          <h2 class="font-medium text-4xl tracking-normal align-center">
-            experıencıng archıtecture
-          </h2>
-          <p class="tracking-wide font-medium text-lg">
-            B. Arch. Thesis - Designing a preschool
-          </p>
-        </div>
-        <img
-          src="/index/L-Arch-Index-Spread-color.png"
-          alt="architecture drawing"
-          class="absolute h-full object-cover right-0 grayscale group-hover:grayscale-0"
-        />
-      </div>
-    </a>
-
-    <div class="pt-36" id="extras">
-      <div class="flex flex-row">
-        <h6 class="md:leading-[77px] leading-[50px] md:text-5xl text-3xl">
-          <em>the</em>
-        </h6>
-        <h1
-          class="leading-[7px] text-[80px] md:text-[130px] tracking-tight md:pl-8 pl-4 font-medium"
-        >
-          extras
-        </h1>
+      </a>
+    </section>
+    <!-- <div class="w-full" id="extras">
+      <div class="flex flex-row pt-6">
+        <h4 class="text-[40px] md:text-[70px] tracking-tight pl-10">extras</h4>
       </div>
     </div>
 
-    <div
-      class="dark:bg-[#3e3f45] bg-[#ECEEF4] pb-40 mt-10 w-full container drop-shadow-md"
-    >
+    <div class="dark:bg-[#2B2C36] bg-[#E2E6F2] pb-40 w-full drop-shadow-md">
       <div class="flex flex-col pl-20 pt-20">
         <h1 class="font-medium text-4xl tracking-tight">poster desıgn</h1>
         <p class="pt-3 tracking-wide font-medium text-lg">
@@ -198,7 +150,7 @@ import MySiteLayout from "../layouts/default.astro";
       </div>
       <div class="overflow-auto md:overflow-visible">
         <div
-          class="flex flex-row md:flex-col md:px-24 md:gap-20 md:pt-20 md:justify-between"
+          class="flex flex-row md:flex-col md:px-[80px] md:gap-20 md:pt-20 md:justify-between"
         >
           <div class="flex flex-row justify-around md:gap-24">
             <a
@@ -299,7 +251,7 @@ import MySiteLayout from "../layouts/default.astro";
     </div>
 
     <div
-      class="dark:bg-[#3e3f45] bg-[#ECEEF4] pl-10 h-[80vh] mt-32 w-full flex flex-row align-center drop-shadow-md"
+      class="dark:bg-[#2B2C36] bg-[#E2E6F2] pl-10 h-[80vh] mt-32 w-full flex flex-row align-center drop-shadow-md"
     >
       <div class="flex-col flex justify-center pl-10 pt-16" id="about-me">
         <div class="justify-center">
@@ -342,7 +294,7 @@ import MySiteLayout from "../layouts/default.astro";
         alt="photo of me"
         class="-mb-80 mt-24 join-me-photo hidden dark:block"
       />
-    </div>
+    </div> -->
   </div>
 </MySiteLayout>
 
@@ -370,10 +322,6 @@ import MySiteLayout from "../layouts/default.astro";
     @media (max-width: 768px) {
       content: url("/index/join-me-photo-outline.png");
     }
-  }
-
-  .join-me-photo:hover {
-    content: url("/index/join-me-photo-outline.png");
   }
 
   .plantplace-logo {
