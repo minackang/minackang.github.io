@@ -145,17 +145,19 @@ function hello() {
         class="fixed top-0 flex flex-row sm:hidden w-full bg-transparent justify-end p-10 z-40"
         id="burger-button"
       >
-        <svg
-          width="22"
-          height="21"
-          viewBox="0 0 22 21"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect y="18" width="22" height="3" rx="1.5"></rect>
-          <rect width="22" height="3" rx="1.5"></rect>
-          <rect y="9" width="22" height="3" rx="1.5"></rect>
-        </svg>
+        <button>
+          <svg
+            width="22"
+            height="21"
+            viewBox="0 0 22 21"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="18" width="22" height="3" rx="1.5"></rect>
+            <rect width="22" height="3" rx="1.5"></rect>
+            <rect y="9" width="22" height="3" rx="1.5"></rect>
+          </svg>
+        </button>
       </div>
       <div
         id="burger-menu"
@@ -188,27 +190,28 @@ function hello() {
               />
             </button>
           </div>
-          <svg
-            width="23"
-            height="23"
-            viewBox="0 0 23 23"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-            id="burger-close"
-          >
-            <rect
-              x="2.12134"
-              width="28.4799"
-              height="3"
-              rx="1.5"
-              transform="rotate(45 2.12134 0)"></rect>
-            <rect
-              width="28.4799"
-              height="3"
-              rx="1.5"
-              transform="matrix(-0.707107 0.707107 0.707107 0.707107 20.1384 0)"
-            ></rect>
-          </svg>
+          <button id="burger-close">
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="2.12134"
+                width="28.4799"
+                height="3"
+                rx="1.5"
+                transform="rotate(45 2.12134 0)"></rect>
+              <rect
+                width="28.4799"
+                height="3"
+                rx="1.5"
+                transform="matrix(-0.707107 0.707107 0.707107 0.707107 20.1384 0)"
+              ></rect>
+            </svg>
+          </button>
         </div>
         <a href="/">
           <h4 class="text-xl hover:text-[#FF424E] dark:hover:text-[#FF8991]">
@@ -248,7 +251,7 @@ function hello() {
           width="23"
           height="25"
           viewBox="0 0 23 25"
-          fill="none"
+          fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect
@@ -256,22 +259,20 @@ function hello() {
             width="25"
             height="3"
             rx="1.5"
-            transform="rotate(90 12.6078 0)"
-            fill="#3A3A3A"></rect>
+            transform="rotate(90 12.6078 0)"></rect>
           <rect
             x="12.4067"
             y="2.12134"
             width="14.5458"
             height="3"
             rx="1.5"
-            transform="rotate(135 12.4067 2.12134)"
-            fill="#3A3A3A"></rect>
+            transform="rotate(135 12.4067 2.12134)"></rect>
           <rect
             width="14.5458"
             height="3"
             rx="1.5"
             transform="matrix(0.707107 0.707107 0.707107 -0.707107 9.60779 2.12134)"
-            fill="#3A3A3A"></rect>
+          ></rect>
         </svg>
       </a>
     </div>
@@ -328,6 +329,17 @@ function hello() {
 
   const closeButton = document.getElementById("burger-close");
   closeButton?.addEventListener("click", () => {
+    const burgerButton = document.getElementById("burger-button");
+    burgerButton?.classList.add("flex");
+    burgerButton?.classList.remove("hidden");
+
+    const menu = document.getElementById("burger-menu");
+    menu?.classList.add("hidden");
+    menu?.classList.remove("flex");
+  });
+
+  const menu = document.getElementById("burger-menu");
+  menu?.addEventListener("click", () => {
     const burgerButton = document.getElementById("burger-button");
     burgerButton?.classList.add("flex");
     burgerButton?.classList.remove("hidden");

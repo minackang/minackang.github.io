@@ -6,22 +6,22 @@ import MySiteLayout from "../../layouts/default.astro";
 <MySiteLayout showBackToTop={true}>
   <div class="w-full">
     <img
-      src="/nutrie/L-Nutrie-page-static-image.png"
+      src="/nutrie/L-Nutrie-page-static-image-2.png"
       alt="Nutrie phone frames"
-      class="-z-50 fixed"
+      class="-z-50 fixed object-fill w-full"
     />
   </div>
   <div class="w-full flex flex-col relative">
     <img
-      src="/nutrie/L-Nutrie-page-static-image.png"
+      src="/nutrie/L-Nutrie-page-static-image-2.png"
       alt="Nutrie phone frames"
       class="opacity-0"
     />
     <div
       class="dark:bg-[#000000] z-40 dark:bg-opacity-50 bg-[#FFFFFF] h-[100px] sm:h-[160px] w-full bg-opacity-50 absolute bottom-0 flex flex-col justify-center text-center"
     >
-      <h1 class="sm:pl-4 text-[30px] sm:text-[40px] font-semibold">nutrie</h1>
-      <h2 class="text-[20px] sm:text-[30px] tracking-wide font-light">
+      <h1 class="sm:pl-4 text-[20px] sm:text-[30px] font-semibold">nutrie</h1>
+      <h2 class="text-[15px] sm:text-[20px] tracking-wide font-light">
         a mobile app for guided intuitive meal planning
       </h2>
     </div>
@@ -29,9 +29,13 @@ import MySiteLayout from "../../layouts/default.astro";
 
   <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
     <article
-      class="sm:max-w-3xl mx-auto pt-8 tracking-wider flex flex-col px-4"
+      class="sm:max-w-3xl mx-auto pt-8 tracking-wider flex flex-col px-8"
     >
-      <h1 class="text-[30px] font-semibold pt-20 pb-10">tl;dr</h1>
+      <h1
+        class="text-[20px] sm:text-[26px] font-semibold pt-5 lg:pt-20 pb-6 sm:pb-10"
+      >
+        tl;dr
+      </h1>
       <p>
         <strong class="font-bold">The Problem:</strong> Meal planning apps on the
         market measure success through numbers, encouraging a rigid eating structure.
@@ -73,11 +77,15 @@ import MySiteLayout from "../../layouts/default.astro";
     <a href="#design"> <ScrollArrow text="scroll down to design" /></a>
   </div>
   <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
-    <article class="sm:max-w-3xl mx-auto tracking-wider px-4">
-      <h1 class="text-[30px] font-semibold pt-16 pb-10">the background</h1>
-      <h1 class="text-[25px] font-light pb-5 tracking-normal">
-        identifying the problem
+    <article class="sm:max-w-3xl mx-auto tracking-wider pt-8 px-8">
+      <h1
+        class="text-[20px] sm:text-[26px] font-semibold pt-5 lg:pt-20 pb-6 sm:pb-10"
+      >
+        the background
       </h1>
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">
+        identifying the problem
+      </h5>
       <p class="pb-5">
         Many existing eating habit apps focus on calorie counting. For people
         who are struggling with their relationship with food, getting caught up
@@ -98,9 +106,9 @@ import MySiteLayout from "../../layouts/default.astro";
         breaking down a day into meals, into each item, would provide a strong
         starting point in building more regular eating habits.
       </p>
-      <h1 class="text-[25px] pb-5 font-light tracking-normal">
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">
         gathering information
-      </h1>
+      </h5>
       <p class="pb-5">
         After researching the market, I realized the main food tracking screens
         for MyFitnessPal, MyPlate, and Lifesum lacked a simple way to see what
@@ -140,8 +148,8 @@ import MySiteLayout from "../../layouts/default.astro";
       </div>
     </article>
 
-    <article class="sm:max-w-3xl mx-auto tracking-wider px-4">
-      <h1 class="text-[25px] pb-5 font-light tracking-normal">goals</h1>
+    <article class="sm:max-w-3xl mx-auto tracking-wider px-8">
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">goals</h5>
       <ol class="list-disc pl-5">
         <li>
           Help foster a relationship with food that does not rely on calorie
@@ -160,9 +168,13 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
   </div>
   <section class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]" id="design">
-    <article class="sm:max-w-3xl max-w-6xl mx-auto tracking-wider px-4">
-      <h1 class="text-[30px] font-semibold pt-16 pb-10">the design</h1>
-      <h1 class="text-[25px] font-light pb-5 tracking-normal">onboarding</h1>
+    <article class="sm:max-w-3xl max-w-6xl mx-auto tracking-wider pt-8 px-8">
+      <h1
+        class="text-[20px] sm:text-[26px] font-semibold pt-5 lg:pt-20 pb-6 sm:pb-10"
+      >
+        the design
+      </h1>
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">onboarding</h5>
       <p class="pb-10">
         The initial setup for this app includes creating an account, selecting a
         goal, and matching with a dietitian and/or therapist if applicable. The
@@ -178,10 +190,8 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
   </section>
   <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
-    <article class="sm:max-w-3xl mx-auto tracking-wider px-4">
-      <h1 class="text-[25px] font-light pt-16 pb-20 tracking-normal">
-        navigation bar
-      </h1>
+    <article class="sm:max-w-3xl mx-auto tracking-wider pt-8 px-8">
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">navigation bar</h5>
       <div class="pb-20">
         <img
           src="/nutrie/L-Nutrie-nav-bar.png"
@@ -197,10 +207,8 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
   </div>
   <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
-    <article class="sm:max-w-3xl mx-auto tracking-wider px-4">
-      <h1 class="text-[25px] font-light pb-5 pt-16 tracking-normal">
-        settings
-      </h1>
+    <article class="sm:max-w-3xl mx-auto tracking-wider pt-8 px-8">
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">settings</h5>
       <p class="pb-20">
         The appearance mode of the app can be changed in settings.
       </p>
@@ -213,8 +221,8 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
   </div>
   <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
-    <article class="sm:max-w-3xl mx-auto tracking-wider px-4">
-      <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">overview</h4>
+    <article class="sm:max-w-3xl mx-auto tracking-wider pt-8 px-8">
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">overview</h5>
       <p class="pb-20">
         Once a meal plan is created, upcoming meals and snacks will appear at
         the top of the homepage in checklist form. Items move from the 'Up Next'
@@ -238,8 +246,8 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
   </div>
   <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
-    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
-      <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">meal planning</h4>
+    <article class="sm:max-w-3xl pt-8 px-8 mx-auto tracking-wider">
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">meal planning</h5>
       <p class="pb-20">
         Daily meal plans are viewable through the calendar. This functionality
         allows the user to view past meal plans as well as set up meal plans for
@@ -263,7 +271,7 @@ import MySiteLayout from "../../layouts/default.astro";
       </div>
     </article>
 
-    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
+    <article class="sm:max-w-3xl px-8 mx-auto tracking-wider">
       <p class="pb-20">
         Within the editing mode, users can add items from their meal plans to a
         shopping list by swiping right on the item or the entire group. The
@@ -279,10 +287,10 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
   </div>
   <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
-    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
-      <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">
+    <article class="sm:max-w-3xl pt-8 px-8 mx-auto tracking-wider">
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">
         progress tracking
-      </h4>
+      </h5>
       <p class="pb-20">
         Each category's completion level is recorded in the form of colored
         rings indicating daily progress. This visual is intended to encourage
@@ -297,7 +305,7 @@ import MySiteLayout from "../../layouts/default.astro";
       </div>
     </article>
 
-    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
+    <article class="sm:max-w-3xl px-8 mx-auto tracking-wider">
       <p class="pb-20">
         The daily journal keeps track of the user's mental and physical wellness
         and provides a space to add notes. Once again, the intent is to keep the
@@ -314,7 +322,7 @@ import MySiteLayout from "../../layouts/default.astro";
       </div>
     </article>
 
-    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
+    <article class="sm:max-w-3xl px-8 mx-auto tracking-wider">
       <p class="pb-20">
         The app also tracks fluctuations in the user's daily overall wellness
         and the likelihood of certain foods to cause them discomfort, allowing
@@ -332,8 +340,8 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
   </div>
   <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4]">
-    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
-      <h4 class="text-[1.5rem] pt-16 pb-5 tracking-normal">communication</h4>
+    <article class="sm:max-w-3xl pt-8 px-8 mx-auto tracking-wider">
+      <h5 class="text-[20px] sm:text-[24px] font-light pb-5">communication</h5>
       <p class="pb-5">
         Nutrie provides a line of communication between the user and a dietitian
         and/or therapist. The function is intended to be similar to that of
@@ -356,8 +364,12 @@ import MySiteLayout from "../../layouts/default.astro";
     </article>
   </div>
   <div class="bg-[#ECEEF4] dark:bg-[#2B2C36]">
-    <article class="sm:max-w-3xl px-4 mx-auto tracking-wider">
-      <h1 class="text-[30px] font-semibold pt-16 pb-5">looking forward</h1>
+    <article class="sm:max-w-3xl pt-8 px-8 mx-auto tracking-wider">
+      <h1
+        class="text-[20px] sm:text-[26px] font-semibold pt-5 lg:pt-20 pb-6 sm:pb-10"
+      >
+        looking forward
+      </h1>
       <p class="pb-5">
         Nutrie is a work in progress. In the future, I would like to add:
       </p>
@@ -375,7 +387,7 @@ import MySiteLayout from "../../layouts/default.astro";
       </ul>
     </article>
     <div class="w-full relative dark:bg-[#1e1e1e] bg-[#f4f4f4] pt-6">
-      <div class="max-w-3xl mx-auto px-4">
+      <div class="max-w-3xl mx-auto px-8">
         <a href="/projects/plantplace">
           <ScrollArrow text="next: plantplace" horizontal />
         </a>
