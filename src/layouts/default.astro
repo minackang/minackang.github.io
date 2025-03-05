@@ -1,5 +1,9 @@
 ---
 import "../styles/global.css";
+import FilledMoon from '../../public/icons/filled-moon.svg?raw'
+import EmptyMoon from '../../public/icons/empty-moon.svg?raw'
+import FilledSun from '../../public/icons/filled-sun.svg?raw'
+import EmptySun from '../../public/icons/empty-sun.svg?raw'
 const { backgroundVisible, showBackToTop } = Astro.props;
 function hello() {
   console.log("open");
@@ -58,12 +62,12 @@ function hello() {
     >
       <div class="flex flex-row gap-12">
         <a href="/">
-          <h4 class="text-xl hover:text-[#FF424E] dark:hover:text-[#FF8991]">
+          <h4 class="text-xl hover:text-[#FF424E]">
             {"home"}
           </h4>
         </a>
         <a href="/#work">
-          <h4 class="hover:text-[#FF424E] dark:hover:text-[#FF8991] text-xl">
+          <h4 class="hover:text-[#FF424E] text-xl">
             work
           </h4>
         </a>
@@ -71,7 +75,7 @@ function hello() {
           <h4 class="hover:text-[#FF424E] dark:hover:text-[#FF8991] text-xl">extras</h4>
         </a> -->
         <a href="/about-me">
-          <h4 class="hover:text-[#FF424E] dark:hover:text-[#FF8991] text-xl">
+          <h4 class="hover:text-[#FF424E] text-xl">
             about
           </h4>
         </a>
@@ -79,28 +83,20 @@ function hello() {
 
       <div class="sm:flex flex-row gap-2 w-14 hidden">
         <button data-dark-mode-button>
-          <img
-            src="/icons/empty-moon.svg"
-            alt="dark mode icon"
-            class="block dark:hidden"
-          />
-          <img
-            src="/icons/filled-moon.svg"
-            alt="dark mode icon"
-            class="hidden dark:block"
-          />
+          <div class="hidden dark:block text-white">
+            <Fragment set:html={FilledMoon} />
+          </div>
+          <div class="block dark:hidden text-black hover:text-[#FF424E]">
+            <Fragment set:html={EmptyMoon} />
+          </div>
         </button>
         <button data-light-mode-button>
-          <img
-            src="/icons/filled-sun.svg"
-            alt="light mode icon"
-            class="block dark:hidden"
-          />
-          <img
-            src="/icons/empty-sun.svg"
-            alt="light mode icon"
-            class="hidden dark:block"
-          />
+          <div class="hidden dark:block text-white hover:text-[#FF424E]">
+            <Fragment set:html={EmptySun} />
+          </div>
+          <div class="block dark:hidden text-black">
+            <Fragment set:html={FilledSun} />
+          </div>
         </button>
       </div>
       <!-- <a
