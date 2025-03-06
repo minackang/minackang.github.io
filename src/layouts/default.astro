@@ -161,28 +161,20 @@ function hello() {
         <div class="flex flex-row justify-between w-full">
           <div class="flex flex-row gap-2">
             <button data-dark-mode-button>
-              <img
-                src="/icons/empty-moon.svg"
-                alt="dark mode icon"
-                class="block dark:hidden"
-              />
-              <img
-                src="/icons/filled-moon.svg"
-                alt="dark mode icon"
-                class="hidden dark:block"
-              />
+              <div class="block dark:hidden text-black hover:text-[#FF424E]">
+                <Fragment set:html={EmptyMoon} />
+              </div>
+              <div class="hidden dark:block text-white">
+                <Fragment set:html={FilledMoon} />
+              </div>
             </button>
             <button data-light-mode-button>
-              <img
-                src="/icons/filled-sun.svg"
-                alt="light mode icon"
-                class="block dark:hidden"
-              />
-              <img
-                src="/icons/empty-sun.svg"
-                alt="light mode icon"
-                class="hidden dark:block"
-              />
+              <div class="block dark:hidden text-black">
+                <Fragment set:html={FilledSun} />
+              </div>
+              <div class="hidden dark:block text-white hover:text-[#FF424E]">
+                <Fragment set:html={EmptySun} />
+              </div>
             </button>
           </div>
           <button id="burger-close">
